@@ -1,0 +1,17 @@
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.Properties.Resources.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.csproj.GenerateResource.Cache
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\bin\Debug\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\bin\Debug\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.Form1.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb\CSIdb\obj\x86\Debug\CSIdb.csprojResolveAssemblyReference.cache
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.Form1.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.Properties.Resources.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.csproj.GenerateResource.Cache
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\bin\Debug\CSIdb.exe.config
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\bin\Debug\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\bin\Debug\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012\CSIdb\obj\x86\Debug\CSIdb.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\bin\Release\CSIdb.exe.config
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\bin\Release\CSIdb.exe
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\bin\Release\CSIdb.pdb
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb_SMS.csprojResolveAssemblyReference.cache
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.CreateJobForm.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.Form1.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.FormMain.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.GeneralReportsForm.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.JobsDB_Form.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.ProdTechForm.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.Properties.Resources.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.SQLtestForm.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb.UsersEditForm.resources
+C:\svnProjects\trunk\CSIdbAccess\CSIdb2012_SMS\CSIdb\obj\x86\Release\CSIdb_SMS.csproj.GenerateResource.Cache
