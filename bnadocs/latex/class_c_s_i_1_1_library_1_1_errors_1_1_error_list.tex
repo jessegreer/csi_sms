@@ -1,0 +1,587 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{}\section{C\+S\+I.\+Library.\+Errors.\+Error\+List Class Reference}
+\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+
+
+Stores an error list where each error has an Enum\+Error\+Codes error code, a string error message, and an optional integer sub-\/error code. Provides various methods to set and read the error\+List. Also, provides means for managing acknowledged vs. unacknowledged errors.  
+
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}{Enum\+To\+String\+Format}} \{ \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921eae54c68397ff7318db2b70dde7ee6ed05}{Enum\+To\+String\+Format.\+A\+L\+L\+\_\+\+F\+I\+E\+L\+DS}} = 0, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ead28d2b7c61d16fdb9ede7dc09e9cf481}{Enum\+To\+String\+Format.\+O\+N\+L\+Y\+\_\+\+S\+T\+R\+I\+N\+GS}} = 1, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ea82bb5e4d90fa668321242380aca7e9be}{Enum\+To\+String\+Format.\+N\+O\+\_\+\+S\+U\+B\+E\+R\+R\+O\+RS}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Contains various To\+String formats \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a094dd0de977fd1f809671e10788df805}{Error\+List}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor initializes instance to no failures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a33937a090601082f29f922c708b177a7}{Set\+Error}} (\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} error\+Code, string error\+Message, int sub\+Error\+Code=0)
+\begin{DoxyCompactList}\small\item\em Appends the specified error (error\+Code, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7cd778a4248c015880bfcdbdba66e91f}{Set\+Error}} (string error\+Message, int sub\+Error\+Code=0)
+\begin{DoxyCompactList}\small\item\em Appends the specified error (\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab50339a10e1de285ac99d4c3990b8693}{Enum\+Error\+Codes.\+N\+O\+NE}}, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af906fa9d544734005f9cbe01485d5e5f}{Set\+Error}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} error)
+\begin{DoxyCompactList}\small\item\em Appends the specified error (error\+Code, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. This method does not append the caller\textquotesingle{}s full name to the error message string of the \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a1e109d782cb81a4f5ce88599a97cf662}{Remove\+Error\+At\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes the error at the specified index. This method exits immediately if there are no errors or if the specified index is invalid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a41a138258732ef270f0089ac818617dd}{Remove\+Unacknowledged\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Removes all errors that have not been acknowledged. This method exits immediately if there are no unacknowledged errors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a14fbdd40776f810b051edb6d5049e0a9}{Remove\+Acknowledged\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Removes all errors that have been acknowledged. This method exits immediately if there are no Acknowledged errors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad9bda10b1e69ab8218cbb6d78b8bdb60}{Remove\+All\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Removes all errors from the error list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0a74d769a7bb1ac855490f1d02c5fceb}{Add\+To\+Error\+Message}} (string message\+To\+Add, int index=L\+A\+S\+T\+\_\+\+I\+N\+D\+EX)
+\begin{DoxyCompactList}\small\item\em Appends a new line and message\+To\+Add to the error message at the specified index. If index is not specified, the message will be added to the last error message in the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a26df213cc94a946cb8c22749277b740c}{Prefix\+To\+Error\+Message}} (string message\+To\+Add, int index=L\+A\+S\+T\+\_\+\+I\+N\+D\+EX)
+\begin{DoxyCompactList}\small\item\em Adds the message\+To\+Add then a new line to the beginning of the error message at the specified index. If index is not specified, the message will be added to the last error message in the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0aa479114c9e50fc432b7fddae90f877}{Get\+Error\+Code\+At\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the error code from the specified index in the error list. Returns \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if index is out of range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a30c56b5ef9bea09a590c28a772e282ea}{Get\+Sub\+Error\+Code\+At\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the sub error code from the specified index in the error list. Returns the int value of \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if index is out of range. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5b395f7a7a6c43878f28a2d1439f0bca}{Get\+Error\+Message\+At\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the error message from the specified index in the error list. Returns \char`\"{}\+Error Message Index requested is out of range.\char`\"{} if index is out of range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aefb5a63d694f8e006e9451eacc7a85c6}{Get\+Error\+At\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} from the specified index in the error list. Fields will be populated with index out of range errors if index is not valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ae27914b1f1d58e41cc39cd4ec978a1b5}{Get\+Last\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} added to the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af489d3e731d11a389d011990ee3a9915}{Get\+Next\+Unacknowledged\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Returns the last \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} added to the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a03ec1010e102319969485963a724f838}{Contains\+Unacknowledged\+Error\+With\+Error\+Code}} (\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} error\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if there is an unacknowledged error with the specified Error\+Code. Returns false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a476d28bd130fefa2fcdf73acd4552646}{Contains\+Error\+With\+Error\+Code}} (\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} error\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if there is any error in the list with the specified Error\+Code. Returns false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a8848e0b1644a338c73c180b226150cd1}{Contains\+Unacknowledged\+Error\+With\+String}} (string search\+String)
+\begin{DoxyCompactList}\small\item\em Returns true if there is an unacknowledged error containing the specified search\+String. Returns false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a190aec44cae9f7829328793047dd9756}{Contains\+Error\+With\+String}} (string search\+String)
+\begin{DoxyCompactList}\small\item\em Returns true if there is any error in the list containing the specified search\+String. Returns false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad54e9277d732adca55c7a11b8aa498ab}{Contains\+Unacknowledged\+Error\+With\+Sub\+Error\+Code}} (int sub\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if there is an unacknowledged error with the specified Error\+Code. Returns false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a449558309268927f61ab310af7757d33}{Contains\+Error\+With\+Sub\+Error\+Code}} (int sub\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if there is any error in the list with the specified Error\+Code. Returns false otherwise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa9f18e0016fce313792b0499d4f0e408}{Acknowledge\+Next\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Acknowledges the next existing unacknowledged error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7b50216224a4ba5f76a0d3f2a8456c88}{Acknowledge\+All\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Acknowledges all existing errors. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a61a012335bd3bea9beaa53dadcb9209a}{To\+String}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}{Enum\+To\+String\+Format}} format=\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ead28d2b7c61d16fdb9ede7dc09e9cf481}{Enum\+To\+String\+Format.\+O\+N\+L\+Y\+\_\+\+S\+T\+R\+I\+N\+GS}})
+\begin{DoxyCompactList}\small\item\em Returns a string containing the error information of each error in the list separated by new lines. The format of each error is based on the specified Enum\+To\+String\+Format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a611379dd03da855446b03f61773ae8d5}{Fail}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if any errors are recorded. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5826d180bd661f1b4c6285b9ca28712f}{Pass}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if no errors are recorded. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a6157e0500ac697bc83e93ef7bf984712}{Error\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the current number of errors. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ac89e2547e9f76d9ba7c8c3a10ab40dcd}{Unacknowledged\+Error\+Exists}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if there are unacknowledged errors, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7e4181e9242e866cccf99596b98cd425}{Acknowledged\+Error\+Exists}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if there are acknowledged errors, false otherwise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a65417ed23dba71f8a5b2ea93434e4216}{Index\+Of\+Last\+Acknowledged\+Error}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the index of the last acknowledged \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a08cc2b3cca8c52820e6258e0b14b7134}{Error\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the next unacknowledged error code in the list. Returns \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if there are no unacknowledged errors. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_acd5490889a4102649bc9c22ce11958b7}{Sub\+Error\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the next unacknowledged sub error code in the list. Returns integer equivalent of \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if there are no unacknowledged errors. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aac79c17f059cd69f3882177c740539c3}{Error\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns an empty string if there are no errors, otherwiwse returns the next unacknowledged error message in the list. If there are no unacknowledged errors, returns the first error in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores an error list where each error has an Enum\+Error\+Codes error code, a string error message, and an optional integer sub-\/error code. Provides various methods to set and read the error\+List. Also, provides means for managing acknowledged vs. unacknowledged errors. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!EnumToStringFormat@{EnumToStringFormat}}
+\index{EnumToStringFormat@{EnumToStringFormat}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{EnumToStringFormat}{EnumToStringFormat}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}{C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Enum\+To\+String\+Format}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Contains various To\+String formats 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALL\_FIELDS@{ALL\_FIELDS}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ALL\_FIELDS@{ALL\_FIELDS}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921eae54c68397ff7318db2b70dde7ee6ed05}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921eae54c68397ff7318db2b70dde7ee6ed05}} 
+A\+L\+L\+\_\+\+F\+I\+E\+L\+DS&\begin{DoxyVerb}        </summary> \end{DoxyVerb}
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONLY\_STRINGS@{ONLY\_STRINGS}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ONLY\_STRINGS@{ONLY\_STRINGS}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ead28d2b7c61d16fdb9ede7dc09e9cf481}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ead28d2b7c61d16fdb9ede7dc09e9cf481}} 
+O\+N\+L\+Y\+\_\+\+S\+T\+R\+I\+N\+GS&\begin{DoxyVerb}        </summary> \end{DoxyVerb}
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_SUBERRORS@{NO\_SUBERRORS}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!NO\_SUBERRORS@{NO\_SUBERRORS}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ea82bb5e4d90fa668321242380aca7e9be}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ea82bb5e4d90fa668321242380aca7e9be}} 
+N\+O\+\_\+\+S\+U\+B\+E\+R\+R\+O\+RS&All fields except sub errors \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a094dd0de977fd1f809671e10788df805}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a094dd0de977fd1f809671e10788df805}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ErrorList@{ErrorList}}
+\index{ErrorList@{ErrorList}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ErrorList()}{ErrorList()}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Error\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor initializes instance to no failures. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7b50216224a4ba5f76a0d3f2a8456c88}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7b50216224a4ba5f76a0d3f2a8456c88}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!AcknowledgeAllErrors@{AcknowledgeAllErrors}}
+\index{AcknowledgeAllErrors@{AcknowledgeAllErrors}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{AcknowledgeAllErrors()}{AcknowledgeAllErrors()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Acknowledge\+All\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Acknowledges all existing errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa9f18e0016fce313792b0499d4f0e408}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa9f18e0016fce313792b0499d4f0e408}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!AcknowledgeNextError@{AcknowledgeNextError}}
+\index{AcknowledgeNextError@{AcknowledgeNextError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{AcknowledgeNextError()}{AcknowledgeNextError()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Acknowledge\+Next\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Acknowledges the next existing unacknowledged error. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0a74d769a7bb1ac855490f1d02c5fceb}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0a74d769a7bb1ac855490f1d02c5fceb}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!AddToErrorMessage@{AddToErrorMessage}}
+\index{AddToErrorMessage@{AddToErrorMessage}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{AddToErrorMessage()}{AddToErrorMessage()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Add\+To\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Add,  }\item[{int}]{index = {\ttfamily LAST\+\_\+INDEX} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Appends a new line and message\+To\+Add to the error message at the specified index. If index is not specified, the message will be added to the last error message in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Add} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a476d28bd130fefa2fcdf73acd4552646}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a476d28bd130fefa2fcdf73acd4552646}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsErrorWithErrorCode@{ContainsErrorWithErrorCode}}
+\index{ContainsErrorWithErrorCode@{ContainsErrorWithErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsErrorWithErrorCode()}{ContainsErrorWithErrorCode()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Error\+With\+Error\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}}}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is any error in the list with the specified Error\+Code. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a190aec44cae9f7829328793047dd9756}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a190aec44cae9f7829328793047dd9756}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsErrorWithString@{ContainsErrorWithString}}
+\index{ContainsErrorWithString@{ContainsErrorWithString}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsErrorWithString()}{ContainsErrorWithString()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Error\+With\+String (\begin{DoxyParamCaption}\item[{string}]{search\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is any error in the list containing the specified search\+String. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a449558309268927f61ab310af7757d33}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a449558309268927f61ab310af7757d33}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsErrorWithSubErrorCode@{ContainsErrorWithSubErrorCode}}
+\index{ContainsErrorWithSubErrorCode@{ContainsErrorWithSubErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsErrorWithSubErrorCode()}{ContainsErrorWithSubErrorCode()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Error\+With\+Sub\+Error\+Code (\begin{DoxyParamCaption}\item[{int}]{sub\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is any error in the list with the specified Error\+Code. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a03ec1010e102319969485963a724f838}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a03ec1010e102319969485963a724f838}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsUnacknowledgedErrorWithErrorCode@{ContainsUnacknowledgedErrorWithErrorCode}}
+\index{ContainsUnacknowledgedErrorWithErrorCode@{ContainsUnacknowledgedErrorWithErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsUnacknowledgedErrorWithErrorCode()}{ContainsUnacknowledgedErrorWithErrorCode()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Unacknowledged\+Error\+With\+Error\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}}}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is an unacknowledged error with the specified Error\+Code. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a8848e0b1644a338c73c180b226150cd1}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a8848e0b1644a338c73c180b226150cd1}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsUnacknowledgedErrorWithString@{ContainsUnacknowledgedErrorWithString}}
+\index{ContainsUnacknowledgedErrorWithString@{ContainsUnacknowledgedErrorWithString}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsUnacknowledgedErrorWithString()}{ContainsUnacknowledgedErrorWithString()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Unacknowledged\+Error\+With\+String (\begin{DoxyParamCaption}\item[{string}]{search\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is an unacknowledged error containing the specified search\+String. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad54e9277d732adca55c7a11b8aa498ab}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad54e9277d732adca55c7a11b8aa498ab}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ContainsUnacknowledgedErrorWithSubErrorCode@{ContainsUnacknowledgedErrorWithSubErrorCode}}
+\index{ContainsUnacknowledgedErrorWithSubErrorCode@{ContainsUnacknowledgedErrorWithSubErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ContainsUnacknowledgedErrorWithSubErrorCode()}{ContainsUnacknowledgedErrorWithSubErrorCode()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Contains\+Unacknowledged\+Error\+With\+Sub\+Error\+Code (\begin{DoxyParamCaption}\item[{int}]{sub\+Error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if there is an unacknowledged error with the specified Error\+Code. Returns false otherwise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aefb5a63d694f8e006e9451eacc7a85c6}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aefb5a63d694f8e006e9451eacc7a85c6}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetErrorAtIndex@{GetErrorAtIndex}}
+\index{GetErrorAtIndex@{GetErrorAtIndex}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetErrorAtIndex()}{GetErrorAtIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Error\+At\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} from the specified index in the error list. Fields will be populated with index out of range errors if index is not valid. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0aa479114c9e50fc432b7fddae90f877}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a0aa479114c9e50fc432b7fddae90f877}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetErrorCodeAtIndex@{GetErrorCodeAtIndex}}
+\index{GetErrorCodeAtIndex@{GetErrorCodeAtIndex}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetErrorCodeAtIndex()}{GetErrorCodeAtIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Error\+Code\+At\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the error code from the specified index in the error list. Returns \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if index is out of range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5b395f7a7a6c43878f28a2d1439f0bca}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5b395f7a7a6c43878f28a2d1439f0bca}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetErrorMessageAtIndex@{GetErrorMessageAtIndex}}
+\index{GetErrorMessageAtIndex@{GetErrorMessageAtIndex}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetErrorMessageAtIndex()}{GetErrorMessageAtIndex()}}
+{\footnotesize\ttfamily string C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Error\+Message\+At\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the error message from the specified index in the error list. Returns \char`\"{}\+Error Message Index requested is out of range.\char`\"{} if index is out of range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ae27914b1f1d58e41cc39cd4ec978a1b5}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ae27914b1f1d58e41cc39cd4ec978a1b5}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetLastError@{GetLastError}}
+\index{GetLastError@{GetLastError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetLastError()}{GetLastError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the last \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} added to the list. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af489d3e731d11a389d011990ee3a9915}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af489d3e731d11a389d011990ee3a9915}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetNextUnacknowledgedError@{GetNextUnacknowledgedError}}
+\index{GetNextUnacknowledgedError@{GetNextUnacknowledgedError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetNextUnacknowledgedError()}{GetNextUnacknowledgedError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Next\+Unacknowledged\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the last \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} added to the list. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a30c56b5ef9bea09a590c28a772e282ea}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a30c56b5ef9bea09a590c28a772e282ea}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!GetSubErrorCodeAtIndex@{GetSubErrorCodeAtIndex}}
+\index{GetSubErrorCodeAtIndex@{GetSubErrorCodeAtIndex}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{GetSubErrorCodeAtIndex()}{GetSubErrorCodeAtIndex()}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Get\+Sub\+Error\+Code\+At\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the sub error code from the specified index in the error list. Returns the int value of \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if index is out of range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a26df213cc94a946cb8c22749277b740c}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a26df213cc94a946cb8c22749277b740c}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!PrefixToErrorMessage@{PrefixToErrorMessage}}
+\index{PrefixToErrorMessage@{PrefixToErrorMessage}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{PrefixToErrorMessage()}{PrefixToErrorMessage()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Prefix\+To\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{message\+To\+Add,  }\item[{int}]{index = {\ttfamily LAST\+\_\+INDEX} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the message\+To\+Add then a new line to the beginning of the error message at the specified index. If index is not specified, the message will be added to the last error message in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+To\+Add} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a14fbdd40776f810b051edb6d5049e0a9}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a14fbdd40776f810b051edb6d5049e0a9}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!RemoveAcknowledgedErrors@{RemoveAcknowledgedErrors}}
+\index{RemoveAcknowledgedErrors@{RemoveAcknowledgedErrors}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{RemoveAcknowledgedErrors()}{RemoveAcknowledgedErrors()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Remove\+Acknowledged\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes all errors that have been acknowledged. This method exits immediately if there are no Acknowledged errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad9bda10b1e69ab8218cbb6d78b8bdb60}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ad9bda10b1e69ab8218cbb6d78b8bdb60}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!RemoveAllErrors@{RemoveAllErrors}}
+\index{RemoveAllErrors@{RemoveAllErrors}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{RemoveAllErrors()}{RemoveAllErrors()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Remove\+All\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes all errors from the error list. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a1e109d782cb81a4f5ce88599a97cf662}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a1e109d782cb81a4f5ce88599a97cf662}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!RemoveErrorAtIndex@{RemoveErrorAtIndex}}
+\index{RemoveErrorAtIndex@{RemoveErrorAtIndex}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{RemoveErrorAtIndex()}{RemoveErrorAtIndex()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Remove\+Error\+At\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the error at the specified index. This method exits immediately if there are no errors or if the specified index is invalid. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a41a138258732ef270f0089ac818617dd}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a41a138258732ef270f0089ac818617dd}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!RemoveUnacknowledgedErrors@{RemoveUnacknowledgedErrors}}
+\index{RemoveUnacknowledgedErrors@{RemoveUnacknowledgedErrors}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{RemoveUnacknowledgedErrors()}{RemoveUnacknowledgedErrors()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Remove\+Unacknowledged\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes all errors that have not been acknowledged. This method exits immediately if there are no unacknowledged errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a33937a090601082f29f922c708b177a7}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a33937a090601082f29f922c708b177a7}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!SetError@{SetError}}
+\index{SetError@{SetError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{SetError()}{SetError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Set\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}}}]{error\+Code,  }\item[{string}]{error\+Message,  }\item[{int}]{sub\+Error\+Code = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Appends the specified error (error\+Code, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Code} & \\
+\hline
+{\em error\+Message} & The caller\textquotesingle{}s namespace, full name, and method name will be automatically added to the beginning of the provided error\+Message string in the following format\+: \char`\"{}\+Namespace.\+Full\+Name.\+Method\+Name\+: \char`\"{}\\
+\hline
+{\em sub\+Error\+Code} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7cd778a4248c015880bfcdbdba66e91f}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7cd778a4248c015880bfcdbdba66e91f}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!SetError@{SetError}}
+\index{SetError@{SetError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{SetError()}{SetError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Set\+Error (\begin{DoxyParamCaption}\item[{string}]{error\+Message,  }\item[{int}]{sub\+Error\+Code = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Appends the specified error (\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab50339a10e1de285ac99d4c3990b8693}{Enum\+Error\+Codes.\+N\+O\+NE}}, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Message} & The caller\textquotesingle{}s namespace, full name, and method name will be automatically added to the beginning of the provided error\+Message string in the following format\+: \char`\"{}\+Namespace.\+Full\+Name.\+Method\+Name\+: \char`\"{}\\
+\hline
+{\em sub\+Error\+Code} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af906fa9d544734005f9cbe01485d5e5f}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_af906fa9d544734005f9cbe01485d5e5f}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!SetError@{SetError}}
+\index{SetError@{SetError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{SetError()}{SetError()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Set\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}}}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Appends the specified error (error\+Code, error\+Message, sub\+Error\+Code) to the end of the error list, sets the global fail flag. This method does not append the caller\textquotesingle{}s full name to the error message string of the 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & None of the fields of the provided \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}} are modified in any way when using this overload.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a61a012335bd3bea9beaa53dadcb9209a}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a61a012335bd3bea9beaa53dadcb9209a}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ToString@{ToString}}
+\index{ToString@{ToString}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string C\+S\+I.\+Library.\+Errors.\+Error\+List.\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921e}{Enum\+To\+String\+Format}}}]{format = {\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aa208d07fb97d8c5eaa0910fde0c7921ead28d2b7c61d16fdb9ede7dc09e9cf481}{Enum\+To\+String\+Format.\+O\+N\+L\+Y\+\_\+\+S\+T\+R\+I\+N\+GS}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a string containing the error information of each error in the list separated by new lines. The format of each error is based on the specified Enum\+To\+String\+Format. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7e4181e9242e866cccf99596b98cd425}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a7e4181e9242e866cccf99596b98cd425}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!AcknowledgedErrorExists@{AcknowledgedErrorExists}}
+\index{AcknowledgedErrorExists@{AcknowledgedErrorExists}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{AcknowledgedErrorExists}{AcknowledgedErrorExists}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Acknowledged\+Error\+Exists\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if there are acknowledged errors, false otherwise. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a08cc2b3cca8c52820e6258e0b14b7134}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a08cc2b3cca8c52820e6258e0b14b7134}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ErrorCode}{ErrorCode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Error\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the next unacknowledged error code in the list. Returns \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if there are no unacknowledged errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a6157e0500ac697bc83e93ef7bf984712}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a6157e0500ac697bc83e93ef7bf984712}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ErrorCount@{ErrorCount}}
+\index{ErrorCount@{ErrorCount}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ErrorCount}{ErrorCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Error\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the current number of errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aac79c17f059cd69f3882177c740539c3}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_aac79c17f059cd69f3882177c740539c3}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{ErrorMessage}{ErrorMessage}}
+{\footnotesize\ttfamily string C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Error\+Message\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns an empty string if there are no errors, otherwiwse returns the next unacknowledged error message in the list. If there are no unacknowledged errors, returns the first error in the list. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a611379dd03da855446b03f61773ae8d5}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a611379dd03da855446b03f61773ae8d5}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!Fail@{Fail}}
+\index{Fail@{Fail}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{Fail}{Fail}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Fail\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if any errors are recorded. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a65417ed23dba71f8a5b2ea93434e4216}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a65417ed23dba71f8a5b2ea93434e4216}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!IndexOfLastAcknowledgedError@{IndexOfLastAcknowledgedError}}
+\index{IndexOfLastAcknowledgedError@{IndexOfLastAcknowledgedError}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{IndexOfLastAcknowledgedError}{IndexOfLastAcknowledgedError}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Index\+Of\+Last\+Acknowledged\+Error\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the index of the last acknowledged \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}}. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5826d180bd661f1b4c6285b9ca28712f}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_a5826d180bd661f1b4c6285b9ca28712f}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!Pass@{Pass}}
+\index{Pass@{Pass}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{Pass}{Pass}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Pass\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if no errors are recorded. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_acd5490889a4102649bc9c22ce11958b7}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_acd5490889a4102649bc9c22ce11958b7}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!SubErrorCode@{SubErrorCode}}
+\index{SubErrorCode@{SubErrorCode}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{SubErrorCode}{SubErrorCode}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Sub\+Error\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the next unacknowledged sub error code in the list. Returns integer equivalent of \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} if there are no unacknowledged errors. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ac89e2547e9f76d9ba7c8c3a10ab40dcd}\label{class_c_s_i_1_1_library_1_1_errors_1_1_error_list_ac89e2547e9f76d9ba7c8c3a10ab40dcd}} 
+\index{CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}!UnacknowledgedErrorExists@{UnacknowledgedErrorExists}}
+\index{UnacknowledgedErrorExists@{UnacknowledgedErrorExists}!CSI.Library.Errors.ErrorList@{CSI.Library.Errors.ErrorList}}
+\subsubsection{\texorpdfstring{UnacknowledgedErrorExists}{UnacknowledgedErrorExists}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Errors.\+Error\+List.\+Unacknowledged\+Error\+Exists\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if there are unacknowledged errors, false otherwise. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Errors.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,306 @@
+\hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{}\section{C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info Struct Reference}
+\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+
+
+Contains detailed information about the types of failures that occurred. Also, contains other information about the collection.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ae370673193b260ed44f49428ad47f71d}{Add\+Violation}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} violation)
+\begin{DoxyCompactList}\small\item\em Adds a violation to the list. Will not modify \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a258029fab0b15bddf49e57a00b1a8553}{Remove\+Violation}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, double x\+\_\+\+Value)
+\begin{DoxyCompactList}\small\item\em Removes the violation with the specified x\+\_\+\+Value of the Failing\+Point from the main violations collection of this instance as well from the pertinent \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} if it exists there. If there is not a violation corresponding to the specified x\+\_\+\+Value, an error will be generated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ac8810869d724d19a43cb5cfa9f318e96}{Modify\+Violation}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, double x\+\_\+\+Value, double y\+\_\+\+Value=double.\+Min\+Value, double low\+Limit\+At\+Violation\+Point=double.\+Min\+Value, double high\+Limit\+At\+Violation\+Point=double.\+Min\+Value)
+\begin{DoxyCompactList}\small\item\em Modifies the violation with the specified x\+\_\+\+Value of the Failing\+Point from the main violations collection of this instance as well from the pertinent \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} if it exists there. If there is not a violation corresponding to the specified x\+\_\+\+Value, an error will be generated. If any of the optional parameters are not passed (or = double.\+Min\+Value), they will not be modified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ad40e751c544e2881c9670d21b29ce011}{Get\+Violations}} (Enum\+Violation\+Sort\+Order sort\+Order=Enum\+Violation\+Sort\+Order.\+A\+S\+C\+E\+N\+D\+I\+N\+G\+\_\+\+X\+\_\+\+V\+A\+L\+U\+ES)
+\begin{DoxyCompactList}\small\item\em Returns a copy of the violation information about each point in the data collection that violated the limits. Any modifications to the returned copy will not propagate to the original instance. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a42cc455336b98253d7ba015aa84d9d52}{Get\+Violation\+Points}} (Enum\+Violation\+Sort\+Order sort\+Order=Enum\+Violation\+Sort\+Order.\+A\+S\+C\+E\+N\+D\+I\+N\+G\+\_\+\+X\+\_\+\+V\+A\+L\+U\+ES)
+\begin{DoxyCompactList}\small\item\em Returns a copy of the X\+Y\+\_\+\+Points from all the violations in the collection as an X\+Y\+\_\+\+Point array. Any modifications to the returned copy will not propagate to the original instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a121390e2e4d37b934aecffdd7370612f}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a121390e2e4d37b934aecffdd7370612f}} 
+internal List$<$ \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} $>$ {\bfseries all\+Violations}
+\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a55b918a4ed299b545693f52f8345a6d3}{Total\+Limit\+Violations}}
+\begin{DoxyCompactList}\small\item\em The number of indices in the collection that violate a high or low limit. This value will be -\/1 if there is an incoming unacknowledged error or if an error is added to error\+List that is not due to the violation of limits (e.\+g. input array is null). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4aab054ecd40dc59dbd5e06950366349}{Maximum\+Value}}
+\begin{DoxyCompactList}\small\item\em The maximum value processed in the data array. This may not be the maximum of the entire array, if the validation method quits early (Max\+Failures\+Before\+Quit). This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a45d51870eda173df0e75aa8ade5e00d6}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a45d51870eda173df0e75aa8ade5e00d6}} 
+internal List$<$ \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} $>$ {\bfseries low\+Limit\+Segments\+Violations\+Info}
+\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4fbecf5adefe2f196a5a157a5636b919}{Max\+Consecutive\+Indices\+Violating\+High\+Limit}}
+\begin{DoxyCompactList}\small\item\em The maximum number of consecutive indices violating the high limit. In other words, the longest stretch violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+internal List$<$ \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} $>$ \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4d8eb3881e0de781e5c2e0f283fe38ff}{high\+Limit\+Segments\+Violations\+Info}}
+\begin{DoxyCompactList}\small\item\em Contains violation information about each segment with defined high limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a26350e4da354b988868679d7edb7f3a8}{Total\+Limit\+Violations\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of indices in the collection that violate a high or low limit. This value will be -\/1 if there is an incoming unacknowledged error or if an error is added to error\+List that is not due to the violation of limits (e.\+g. input array is null). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a1f5e002ded758075e254d8e2745fb4a8}{Minimum\+\_\+\+Y\+\_\+\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The minimum value processed in the data array. This may not be the minimum of the entire array, if the validation method quits early (Max\+Failures\+Before\+Quit). This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_acee7fa4ab2959cec2444b527af463ad6}{Maximum\+\_\+\+Y\+\_\+\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximum value processed in the data array. This may not be the maximum of the entire array, if the validation method quits early due to the setting of Max\+Failures\+Before\+Quit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_abb02446728d60d09ecc19f00408fd2fa}{Low\+Limit\+Violations\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many indices had a value that violated the low limit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab377e2176f754f4814233b53779db71f}{Maximum\+Consecutive\+Indices\+Violating\+Low\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximum number of consecutive indices violating the low limit. In other words, the longest stretch violating the low limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6d1b4da5f23284f904e81ebb4e5f42ef}{Consecutive\+Low\+Limit\+Violations\+Group\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of times the data started violating the low limit. In other words the number of consecutive stretches violating the low limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab8eab78c041033f61adb35376d39b9db}{Low\+Limit\+Segments\+Violations\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Contains violation information about each segment with defined low limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a08301f6b073dbc8cc429bdc940bab47e}{High\+Limit\+Violations\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many indices had a value that violated the high limit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6961ce4c307f34c73607cfab9cd8a5d3}{Maximum\+Consecutive\+Indices\+Violating\+High\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximum number of consecutive indices violating the high limit. In other words, the longest stretch violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_aeef692d5f786e24236df71201a84e684}{Consecutive\+High\+Limit\+Violations\+Group\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of times the data started violating the high limit. In other words the number of consecutive stretches violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a0f7bee22ee490d5687371c2301096d13}{High\+Limit\+Segments\+Violations\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Contains violation information about each segment with defined low limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains detailed information about the types of failures that occurred. Also, contains other information about the collection. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ae370673193b260ed44f49428ad47f71d}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ae370673193b260ed44f49428ad47f71d}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!AddViolation@{AddViolation}}
+\index{AddViolation@{AddViolation}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{AddViolation()}{AddViolation()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Add\+Violation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{violation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a violation to the list. Will not modify \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em violation} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a42cc455336b98253d7ba015aa84d9d52}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a42cc455336b98253d7ba015aa84d9d52}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!GetViolationPoints@{GetViolationPoints}}
+\index{GetViolationPoints@{GetViolationPoints}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{GetViolationPoints()}{GetViolationPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Get\+Violation\+Points (\begin{DoxyParamCaption}\item[{Enum\+Violation\+Sort\+Order}]{sort\+Order = {\ttfamily EnumViolationSortOrder.ASCENDING\+\_\+X\+\_\+VALUES} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of the X\+Y\+\_\+\+Points from all the violations in the collection as an X\+Y\+\_\+\+Point array. Any modifications to the returned copy will not propagate to the original instance. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ad40e751c544e2881c9670d21b29ce011}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ad40e751c544e2881c9670d21b29ce011}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!GetViolations@{GetViolations}}
+\index{GetViolations@{GetViolations}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{GetViolations()}{GetViolations()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Get\+Violations (\begin{DoxyParamCaption}\item[{Enum\+Violation\+Sort\+Order}]{sort\+Order = {\ttfamily EnumViolationSortOrder.ASCENDING\+\_\+X\+\_\+VALUES} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of the violation information about each point in the data collection that violated the limits. Any modifications to the returned copy will not propagate to the original instance. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ac8810869d724d19a43cb5cfa9f318e96}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ac8810869d724d19a43cb5cfa9f318e96}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!ModifyViolation@{ModifyViolation}}
+\index{ModifyViolation@{ModifyViolation}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{ModifyViolation()}{ModifyViolation()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Modify\+Violation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{double}]{x\+\_\+\+Value,  }\item[{double}]{y\+\_\+\+Value = {\ttfamily double.MinValue},  }\item[{double}]{low\+Limit\+At\+Violation\+Point = {\ttfamily double.MinValue},  }\item[{double}]{high\+Limit\+At\+Violation\+Point = {\ttfamily double.MinValue} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifies the violation with the specified x\+\_\+\+Value of the Failing\+Point from the main violations collection of this instance as well from the pertinent \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} if it exists there. If there is not a violation corresponding to the specified x\+\_\+\+Value, an error will be generated. If any of the optional parameters are not passed (or = double.\+Min\+Value), they will not be modified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em x\+\_\+\+Value} & Identifies the violation to modify.\\
+\hline
+{\em y\+\_\+\+Value} & \\
+\hline
+{\em low\+Limit\+At\+Violation\+Point} & \\
+\hline
+{\em high\+Limit\+At\+Violation\+Point} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a258029fab0b15bddf49e57a00b1a8553}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a258029fab0b15bddf49e57a00b1a8553}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!RemoveViolation@{RemoveViolation}}
+\index{RemoveViolation@{RemoveViolation}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{RemoveViolation()}{RemoveViolation()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Remove\+Violation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{double}]{x\+\_\+\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the violation with the specified x\+\_\+\+Value of the Failing\+Point from the main violations collection of this instance as well from the pertinent \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} if it exists there. If there is not a violation corresponding to the specified x\+\_\+\+Value, an error will be generated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em x\+\_\+\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4d8eb3881e0de781e5c2e0f283fe38ff}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4d8eb3881e0de781e5c2e0f283fe38ff}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!highLimitSegmentsViolationsInfo@{highLimitSegmentsViolationsInfo}}
+\index{highLimitSegmentsViolationsInfo@{highLimitSegmentsViolationsInfo}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{highLimitSegmentsViolationsInfo}{highLimitSegmentsViolationsInfo}}
+{\footnotesize\ttfamily internal List$<$\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}}$>$ C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+high\+Limit\+Segments\+Violations\+Info}
+
+
+
+Contains violation information about each segment with defined high limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4fbecf5adefe2f196a5a157a5636b919}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4fbecf5adefe2f196a5a157a5636b919}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!MaxConsecutiveIndicesViolatingHighLimit@{MaxConsecutiveIndicesViolatingHighLimit}}
+\index{MaxConsecutiveIndicesViolatingHighLimit@{MaxConsecutiveIndicesViolatingHighLimit}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{MaxConsecutiveIndicesViolatingHighLimit}{MaxConsecutiveIndicesViolatingHighLimit}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Max\+Consecutive\+Indices\+Violating\+High\+Limit}
+
+
+
+The maximum number of consecutive indices violating the high limit. In other words, the longest stretch violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4aab054ecd40dc59dbd5e06950366349}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a4aab054ecd40dc59dbd5e06950366349}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!MaximumValue@{MaximumValue}}
+\index{MaximumValue@{MaximumValue}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{MaximumValue}{MaximumValue}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Maximum\+Value}
+
+
+
+The maximum value processed in the data array. This may not be the maximum of the entire array, if the validation method quits early (Max\+Failures\+Before\+Quit). This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a55b918a4ed299b545693f52f8345a6d3}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a55b918a4ed299b545693f52f8345a6d3}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!TotalLimitViolations@{TotalLimitViolations}}
+\index{TotalLimitViolations@{TotalLimitViolations}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{TotalLimitViolations}{TotalLimitViolations}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Total\+Limit\+Violations}
+
+
+
+The number of indices in the collection that violate a high or low limit. This value will be -\/1 if there is an incoming unacknowledged error or if an error is added to error\+List that is not due to the violation of limits (e.\+g. input array is null). 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_aeef692d5f786e24236df71201a84e684}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_aeef692d5f786e24236df71201a84e684}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!ConsecutiveHighLimitViolationsGroupCount@{ConsecutiveHighLimitViolationsGroupCount}}
+\index{ConsecutiveHighLimitViolationsGroupCount@{ConsecutiveHighLimitViolationsGroupCount}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{ConsecutiveHighLimitViolationsGroupCount}{ConsecutiveHighLimitViolationsGroupCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Consecutive\+High\+Limit\+Violations\+Group\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of times the data started violating the high limit. In other words the number of consecutive stretches violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6d1b4da5f23284f904e81ebb4e5f42ef}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6d1b4da5f23284f904e81ebb4e5f42ef}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!ConsecutiveLowLimitViolationsGroupCount@{ConsecutiveLowLimitViolationsGroupCount}}
+\index{ConsecutiveLowLimitViolationsGroupCount@{ConsecutiveLowLimitViolationsGroupCount}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{ConsecutiveLowLimitViolationsGroupCount}{ConsecutiveLowLimitViolationsGroupCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Consecutive\+Low\+Limit\+Violations\+Group\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of times the data started violating the low limit. In other words the number of consecutive stretches violating the low limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a0f7bee22ee490d5687371c2301096d13}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a0f7bee22ee490d5687371c2301096d13}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!HighLimitSegmentsViolationsInfo@{HighLimitSegmentsViolationsInfo}}
+\index{HighLimitSegmentsViolationsInfo@{HighLimitSegmentsViolationsInfo}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{HighLimitSegmentsViolationsInfo}{HighLimitSegmentsViolationsInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+High\+Limit\+Segments\+Violations\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Contains violation information about each segment with defined low limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a08301f6b073dbc8cc429bdc940bab47e}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a08301f6b073dbc8cc429bdc940bab47e}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!HighLimitViolationsCount@{HighLimitViolationsCount}}
+\index{HighLimitViolationsCount@{HighLimitViolationsCount}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{HighLimitViolationsCount}{HighLimitViolationsCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+High\+Limit\+Violations\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How many indices had a value that violated the high limit. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab8eab78c041033f61adb35376d39b9db}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab8eab78c041033f61adb35376d39b9db}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!LowLimitSegmentsViolationsInfo@{LowLimitSegmentsViolationsInfo}}
+\index{LowLimitSegmentsViolationsInfo@{LowLimitSegmentsViolationsInfo}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{LowLimitSegmentsViolationsInfo}{LowLimitSegmentsViolationsInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{Segment\+Violations\+Info}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Low\+Limit\+Segments\+Violations\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Contains violation information about each segment with defined low limits. This field does not apply (and thus will always be null) if this \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info}{Violations\+Info}} object was returned from method Validate\+Collection\+Within\+Limits or Validate\+Collection\+Within\+Limtis\+Arrays. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_abb02446728d60d09ecc19f00408fd2fa}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_abb02446728d60d09ecc19f00408fd2fa}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!LowLimitViolationsCount@{LowLimitViolationsCount}}
+\index{LowLimitViolationsCount@{LowLimitViolationsCount}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{LowLimitViolationsCount}{LowLimitViolationsCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Low\+Limit\+Violations\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How many indices had a value that violated the low limit. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_acee7fa4ab2959cec2444b527af463ad6}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_acee7fa4ab2959cec2444b527af463ad6}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!Maximum\_Y\_Value@{Maximum\_Y\_Value}}
+\index{Maximum\_Y\_Value@{Maximum\_Y\_Value}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{Maximum\_Y\_Value}{Maximum\_Y\_Value}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Maximum\+\_\+\+Y\+\_\+\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximum value processed in the data array. This may not be the maximum of the entire array, if the validation method quits early due to the setting of Max\+Failures\+Before\+Quit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6961ce4c307f34c73607cfab9cd8a5d3}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a6961ce4c307f34c73607cfab9cd8a5d3}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!MaximumConsecutiveIndicesViolatingHighLimit@{MaximumConsecutiveIndicesViolatingHighLimit}}
+\index{MaximumConsecutiveIndicesViolatingHighLimit@{MaximumConsecutiveIndicesViolatingHighLimit}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{MaximumConsecutiveIndicesViolatingHighLimit}{MaximumConsecutiveIndicesViolatingHighLimit}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Maximum\+Consecutive\+Indices\+Violating\+High\+Limit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximum number of consecutive indices violating the high limit. In other words, the longest stretch violating the high limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab377e2176f754f4814233b53779db71f}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_ab377e2176f754f4814233b53779db71f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!MaximumConsecutiveIndicesViolatingLowLimit@{MaximumConsecutiveIndicesViolatingLowLimit}}
+\index{MaximumConsecutiveIndicesViolatingLowLimit@{MaximumConsecutiveIndicesViolatingLowLimit}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{MaximumConsecutiveIndicesViolatingLowLimit}{MaximumConsecutiveIndicesViolatingLowLimit}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Maximum\+Consecutive\+Indices\+Violating\+Low\+Limit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximum number of consecutive indices violating the low limit. In other words, the longest stretch violating the low limit. This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a1f5e002ded758075e254d8e2745fb4a8}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a1f5e002ded758075e254d8e2745fb4a8}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!Minimum\_Y\_Value@{Minimum\_Y\_Value}}
+\index{Minimum\_Y\_Value@{Minimum\_Y\_Value}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{Minimum\_Y\_Value}{Minimum\_Y\_Value}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Minimum\+\_\+\+Y\+\_\+\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The minimum value processed in the data array. This may not be the minimum of the entire array, if the validation method quits early (Max\+Failures\+Before\+Quit). This value is not modified by calls to Add\+Violation, Remove\+Violation, or Modify\+Violation. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a26350e4da354b988868679d7edb7f3a8}\label{struct_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violations_info_a26350e4da354b988868679d7edb7f3a8}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}!TotalLimitViolationsCount@{TotalLimitViolationsCount}}
+\index{TotalLimitViolationsCount@{TotalLimitViolationsCount}!CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.ViolationsInfo}}
+\subsubsection{\texorpdfstring{TotalLimitViolationsCount}{TotalLimitViolationsCount}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violations\+Info.\+Total\+Limit\+Violations\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of indices in the collection that violate a high or low limit. This value will be -\/1 if there is an incoming unacknowledged error or if an error is added to error\+List that is not due to the violation of limits (e.\+g. input array is null). 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Array\+Limit\+Checks.\+cs\end{DoxyCompactItemize}

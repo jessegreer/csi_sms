@@ -1,0 +1,101 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}{}\section{C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info Class Reference}
+\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info}\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+
+
+Contains violations info for each limit segment where a segment corresponds to either the low or high limit of single \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_range_limits}{Range\+Limits}} instance or the linearly connected line segment between to \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} instances.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ad4de19b57d46097c741c418872278596}{Get\+Violations}} (Enum\+Violation\+Sort\+Order sort\+Order=Enum\+Violation\+Sort\+Order.\+A\+S\+C\+E\+N\+D\+I\+N\+G\+\_\+\+X\+\_\+\+V\+A\+L\+U\+ES)
+\begin{DoxyCompactList}\small\item\em Returns all the Violations found for this limit segment. Returns a copy of the violation information about each point that violated the limits of this segment. Any modifications to the returned copy will not propagate to the original instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a68b0f5cb191ec4d9b4c70c0a120b9cfa}{Get\+Violation\+Points}} (Enum\+Violation\+Sort\+Order sort\+Order=Enum\+Violation\+Sort\+Order.\+A\+S\+C\+E\+N\+D\+I\+N\+G\+\_\+\+X\+\_\+\+V\+A\+L\+U\+ES)
+\begin{DoxyCompactList}\small\item\em Returns a copy of the X\+Y\+\_\+\+Points from all the violations in the segment as an X\+Y\+\_\+\+Point array. Any modifications to the returned copy will not propagate to the original instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ac531a23e05a88fa0ef19232fd2e1268d}{Range\+Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The beginning range value of this segment. Used for verification that this instance corresponds to the intended segment. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a8e1c8dafd75966cd6027d898bb23def4}{Range\+Stop}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ending range value of this segment. Used for verification that this instance corresponds to the intended segment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_abe3392755fff9d162f27757e4c3b552c}{Violations\+Exist}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if there were any limit violations for this segment, false otherwise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_acbdda4b4d875fdf0c50212817022b56b}{Violations\+Count\+In\+Segment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total number of violations found for this limit segment. Cannot be higher than the Max\+Failures\+Before\+Quit value specified in the validation method that returns the containing object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains violations info for each limit segment where a segment corresponds to either the low or high limit of single \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_range_limits}{Range\+Limits}} instance or the linearly connected line segment between to \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} instances. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a68b0f5cb191ec4d9b4c70c0a120b9cfa}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a68b0f5cb191ec4d9b4c70c0a120b9cfa}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!GetViolationPoints@{GetViolationPoints}}
+\index{GetViolationPoints@{GetViolationPoints}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{GetViolationPoints()}{GetViolationPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Get\+Violation\+Points (\begin{DoxyParamCaption}\item[{Enum\+Violation\+Sort\+Order}]{sort\+Order = {\ttfamily EnumViolationSortOrder.ASCENDING\+\_\+X\+\_\+VALUES} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of the X\+Y\+\_\+\+Points from all the violations in the segment as an X\+Y\+\_\+\+Point array. Any modifications to the returned copy will not propagate to the original instance. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ad4de19b57d46097c741c418872278596}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ad4de19b57d46097c741c418872278596}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!GetViolations@{GetViolations}}
+\index{GetViolations@{GetViolations}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{GetViolations()}{GetViolations()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Get\+Violations (\begin{DoxyParamCaption}\item[{Enum\+Violation\+Sort\+Order}]{sort\+Order = {\ttfamily EnumViolationSortOrder.ASCENDING\+\_\+X\+\_\+VALUES} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns all the Violations found for this limit segment. Returns a copy of the violation information about each point that violated the limits of this segment. Any modifications to the returned copy will not propagate to the original instance. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ac531a23e05a88fa0ef19232fd2e1268d}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_ac531a23e05a88fa0ef19232fd2e1268d}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!RangeStart@{RangeStart}}
+\index{RangeStart@{RangeStart}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{RangeStart}{RangeStart}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Range\+Start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The beginning range value of this segment. Used for verification that this instance corresponds to the intended segment. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a8e1c8dafd75966cd6027d898bb23def4}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_a8e1c8dafd75966cd6027d898bb23def4}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!RangeStop@{RangeStop}}
+\index{RangeStop@{RangeStop}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{RangeStop}{RangeStop}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Range\+Stop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The ending range value of this segment. Used for verification that this instance corresponds to the intended segment. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_acbdda4b4d875fdf0c50212817022b56b}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_acbdda4b4d875fdf0c50212817022b56b}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!ViolationsCountInSegment@{ViolationsCountInSegment}}
+\index{ViolationsCountInSegment@{ViolationsCountInSegment}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{ViolationsCountInSegment}{ViolationsCountInSegment}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Violations\+Count\+In\+Segment\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The total number of violations found for this limit segment. Cannot be higher than the Max\+Failures\+Before\+Quit value specified in the validation method that returns the containing object. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_abe3392755fff9d162f27757e4c3b552c}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_segment_violations_info_abe3392755fff9d162f27757e4c3b552c}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}!ViolationsExist@{ViolationsExist}}
+\index{ViolationsExist@{ViolationsExist}!CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo@{CSI.Library.ArrayUtilities.ArrayLimitChecks.SegmentViolationsInfo}}
+\subsubsection{\texorpdfstring{ViolationsExist}{ViolationsExist}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Segment\+Violations\+Info.\+Violations\+Exist\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+True if there were any limit violations for this segment, false otherwise. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Array\+Limit\+Checks.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,178 @@
+\hypertarget{namespace_c_s_i_1_1_library_1_1_errors}{}\section{C\+S\+I.\+Library.\+Errors Namespace Reference}
+\label{namespace_c_s_i_1_1_library_1_1_errors}\index{CSI.Library.Errors@{CSI.Library.Errors}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error}{Error}}
+\begin{DoxyCompactList}\small\item\em Storage container for a single error. This includes an Enum\+Error\+Codes type, a string, and a sub\+Error\+Code. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}
+\begin{DoxyCompactList}\small\item\em Stores an error list where each error has an Enum\+Error\+Codes error code, a string error message, and an optional integer sub-\/error code. Provides various methods to set and read the error\+List. Also, provides means for managing acknowledged vs. unacknowledged errors. \end{DoxyCompactList}\item 
+class {\bfseries Error\+Utilities}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{Enum\+Error\+Codes}} \{ \newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}{Enum\+Error\+Codes.\+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE}} = -\/1, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab50339a10e1de285ac99d4c3990b8693}{Enum\+Error\+Codes.\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab9e14d9b2886bcff408b85aefa780419}{Enum\+Error\+Codes.\+F\+A\+I\+L\+ED}} = 1, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a322025110415f74112e5388dab886066}{Enum\+Error\+Codes.\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+NS}} = 2, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a971c4695cad0d47e1cd51886ec425291}{Enum\+Error\+Codes.\+D\+E\+V\+I\+C\+E\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+ON}} = 3, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a6ca491b9b65e61b1e6583cb3e643879f}{Enum\+Error\+Codes.\+D\+E\+V\+I\+C\+E\+\_\+\+I\+N\+T\+E\+R\+N\+AL}} = 4, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ac063281d4adc16ebccfec66aa885b4dd}{Enum\+Error\+Codes.\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+UT}} = 5, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7acd54d99c8efb3c2db794197045f5b83c}{Enum\+Error\+Codes.\+F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}} = 6, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7adcbd3ad09729374981c610e00b4546fc}{Enum\+Error\+Codes.\+A\+B\+O\+V\+E\+\_\+\+A\+C\+C\+E\+P\+T\+E\+D\+\_\+\+R\+A\+N\+GE}} = 7, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a997af939e44e12c8cb42b8f629bc2cfc}{Enum\+Error\+Codes.\+B\+E\+L\+O\+W\+\_\+\+A\+C\+C\+E\+P\+T\+E\+D\+\_\+\+R\+A\+N\+GE}} = 8, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aa7600947738fcac12f004f06ac14b2e9}{Enum\+Error\+Codes.\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+S\+U\+LT}} = 9, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7abad569d451f79186a6136f9583fed204}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+0}} = 10, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4fca7d84d98b90b48280c5256903aed7}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+1}} = 11, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a0b89e37271872e891b21021297d62a81}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+2}} = 12, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9d9c04209ffb236f1124a63fbdaa2bc5}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+3}} = 13, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aaf9cf82c7779d08edccb2b8d6123c5f8}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+4}} = 14, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a2b93734f0933bc2a4d1c5bf422559037}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+5}} = 15, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a66d524c913923e2c45c60d502375f1e6}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+6}} = 16, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3eb8003fe8628968ca6b6e5bc4c5b227}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+7}} = 17, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a303fb2a99d156c47fd7843abf0f8b060}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+8}} = 18, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a79c7131caf7aea71f414d3a8c0bafd83}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+9}} = 19, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a1e431fe047e796629629f3a8d6f95691}{Enum\+Error\+Codes.\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+10}} = 20, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4e6c860e5da10e31c5fd9cb76ddc2025}{Enum\+Error\+Codes.\+A\+B\+O\+R\+T\+ED}} = 21, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a02de9649e258d1dd94056e676061e969}{Enum\+Error\+Codes.\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}} = 22, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9b40004e356bbecf8c222684be0988c7}{Enum\+Error\+Codes.\+D\+E\+V\+I\+C\+E\+\_\+\+B\+U\+SY}} = 23, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a97563a7d5b9ad61292ad2f7a53e50856}{Enum\+Error\+Codes.\+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+US}} = 24, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ade918d7abaea4c856c3c64720f3cbb7c}{Enum\+Error\+Codes.\+I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}} = 25, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3e860a081575fc82cc7b6ed2ca602947}{Enum\+Error\+Codes.\+N\+O\+T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+ED}} = 26
+ \}
+\begin{DoxyCompactList}\small\item\em Generic error codes used for categorizing errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}} 
+\index{CSI.Library.Errors@{CSI.Library.Errors}!EnumErrorCodes@{EnumErrorCodes}}
+\index{EnumErrorCodes@{EnumErrorCodes}!CSI.Library.Errors@{CSI.Library.Errors}}
+\subsubsection{\texorpdfstring{EnumErrorCodes}{EnumErrorCodes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7}{C\+S\+I.\+Library.\+Errors.\+Enum\+Error\+Codes}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Generic error codes used for categorizing errors. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INDEX\_OUT\_OF\_RANGE@{INDEX\_OUT\_OF\_RANGE}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!INDEX\_OUT\_OF\_RANGE@{INDEX\_OUT\_OF\_RANGE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a577cf42cc2eae1cffef0f749c6c08787}} 
+I\+N\+D\+E\+X\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+A\+N\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!NONE@{NONE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab50339a10e1de285ac99d4c3990b8693}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab50339a10e1de285ac99d4c3990b8693}} 
+N\+O\+NE&No error code specified. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAILED@{FAILED}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!FAILED@{FAILED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab9e14d9b2886bcff408b85aefa780419}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ab9e14d9b2886bcff408b85aefa780419}} 
+F\+A\+I\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMUNICATIONS@{COMMUNICATIONS}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!COMMUNICATIONS@{COMMUNICATIONS}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a322025110415f74112e5388dab886066}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a322025110415f74112e5388dab886066}} 
+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+NS&Implies inability to Connect, Send, or Receive. Should not be used to indicate errant or missing information. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_PROTECTION@{DEVICE\_PROTECTION}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!DEVICE\_PROTECTION@{DEVICE\_PROTECTION}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a971c4695cad0d47e1cd51886ec425291}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a971c4695cad0d47e1cd51886ec425291}} 
+D\+E\+V\+I\+C\+E\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_INTERNAL@{DEVICE\_INTERNAL}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!DEVICE\_INTERNAL@{DEVICE\_INTERNAL}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a6ca491b9b65e61b1e6583cb3e643879f}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a6ca491b9b65e61b1e6583cb3e643879f}} 
+D\+E\+V\+I\+C\+E\+\_\+\+I\+N\+T\+E\+R\+N\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_INPUT@{INVALID\_INPUT}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!INVALID\_INPUT@{INVALID\_INPUT}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ac063281d4adc16ebccfec66aa885b4dd}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ac063281d4adc16ebccfec66aa885b4dd}} 
+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+P\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FILE\_NOT\_FOUND@{FILE\_NOT\_FOUND}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!FILE\_NOT\_FOUND@{FILE\_NOT\_FOUND}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7acd54d99c8efb3c2db794197045f5b83c}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7acd54d99c8efb3c2db794197045f5b83c}} 
+F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABOVE\_ACCEPTED\_RANGE@{ABOVE\_ACCEPTED\_RANGE}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!ABOVE\_ACCEPTED\_RANGE@{ABOVE\_ACCEPTED\_RANGE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7adcbd3ad09729374981c610e00b4546fc}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7adcbd3ad09729374981c610e00b4546fc}} 
+A\+B\+O\+V\+E\+\_\+\+A\+C\+C\+E\+P\+T\+E\+D\+\_\+\+R\+A\+N\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BELOW\_ACCEPTED\_RANGE@{BELOW\_ACCEPTED\_RANGE}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!BELOW\_ACCEPTED\_RANGE@{BELOW\_ACCEPTED\_RANGE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a997af939e44e12c8cb42b8f629bc2cfc}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a997af939e44e12c8cb42b8f629bc2cfc}} 
+B\+E\+L\+O\+W\+\_\+\+A\+C\+C\+E\+P\+T\+E\+D\+\_\+\+R\+A\+N\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_RESULT@{INVALID\_RESULT}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!INVALID\_RESULT@{INVALID\_RESULT}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aa7600947738fcac12f004f06ac14b2e9}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aa7600947738fcac12f004f06ac14b2e9}} 
+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+S\+U\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_0@{GENERIC\_FAILURE\_0}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_0@{GENERIC\_FAILURE\_0}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7abad569d451f79186a6136f9583fed204}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7abad569d451f79186a6136f9583fed204}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_1@{GENERIC\_FAILURE\_1}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_1@{GENERIC\_FAILURE\_1}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4fca7d84d98b90b48280c5256903aed7}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4fca7d84d98b90b48280c5256903aed7}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_2@{GENERIC\_FAILURE\_2}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_2@{GENERIC\_FAILURE\_2}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a0b89e37271872e891b21021297d62a81}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a0b89e37271872e891b21021297d62a81}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_3@{GENERIC\_FAILURE\_3}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_3@{GENERIC\_FAILURE\_3}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9d9c04209ffb236f1124a63fbdaa2bc5}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9d9c04209ffb236f1124a63fbdaa2bc5}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_4@{GENERIC\_FAILURE\_4}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_4@{GENERIC\_FAILURE\_4}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aaf9cf82c7779d08edccb2b8d6123c5f8}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7aaf9cf82c7779d08edccb2b8d6123c5f8}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_5@{GENERIC\_FAILURE\_5}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_5@{GENERIC\_FAILURE\_5}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a2b93734f0933bc2a4d1c5bf422559037}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a2b93734f0933bc2a4d1c5bf422559037}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_6@{GENERIC\_FAILURE\_6}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_6@{GENERIC\_FAILURE\_6}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a66d524c913923e2c45c60d502375f1e6}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a66d524c913923e2c45c60d502375f1e6}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_7@{GENERIC\_FAILURE\_7}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_7@{GENERIC\_FAILURE\_7}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3eb8003fe8628968ca6b6e5bc4c5b227}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3eb8003fe8628968ca6b6e5bc4c5b227}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_8@{GENERIC\_FAILURE\_8}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_8@{GENERIC\_FAILURE\_8}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a303fb2a99d156c47fd7843abf0f8b060}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a303fb2a99d156c47fd7843abf0f8b060}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_9@{GENERIC\_FAILURE\_9}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_9@{GENERIC\_FAILURE\_9}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a79c7131caf7aea71f414d3a8c0bafd83}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a79c7131caf7aea71f414d3a8c0bafd83}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FAILURE\_10@{GENERIC\_FAILURE\_10}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!GENERIC\_FAILURE\_10@{GENERIC\_FAILURE\_10}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a1e431fe047e796629629f3a8d6f95691}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a1e431fe047e796629629f3a8d6f95691}} 
+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABORTED@{ABORTED}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!ABORTED@{ABORTED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4e6c860e5da10e31c5fd9cb76ddc2025}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a4e6c860e5da10e31c5fd9cb76ddc2025}} 
+A\+B\+O\+R\+T\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_INITIALIZED@{NOT\_INITIALIZED}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!NOT\_INITIALIZED@{NOT\_INITIALIZED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a02de9649e258d1dd94056e676061e969}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a02de9649e258d1dd94056e676061e969}} 
+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_BUSY@{DEVICE\_BUSY}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!DEVICE\_BUSY@{DEVICE\_BUSY}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9b40004e356bbecf8c222684be0988c7}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a9b40004e356bbecf8c222684be0988c7}} 
+D\+E\+V\+I\+C\+E\+\_\+\+B\+U\+SY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVICE\_STATUS@{DEVICE\_STATUS}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!DEVICE\_STATUS@{DEVICE\_STATUS}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a97563a7d5b9ad61292ad2f7a53e50856}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a97563a7d5b9ad61292ad2f7a53e50856}} 
+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_OPERATION@{INVALID\_OPERATION}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!INVALID\_OPERATION@{INVALID\_OPERATION}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ade918d7abaea4c856c3c64720f3cbb7c}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7ade918d7abaea4c856c3c64720f3cbb7c}} 
+I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_IMPLEMENTED@{NOT\_IMPLEMENTED}!CSI.Library.Errors@{CSI.Library.Errors}}\index{CSI.Library.Errors@{CSI.Library.Errors}!NOT\_IMPLEMENTED@{NOT\_IMPLEMENTED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3e860a081575fc82cc7b6ed2ca602947}\label{namespace_c_s_i_1_1_library_1_1_errors_a5534735de1ef2256eb4c52c7440e30d7a3e860a081575fc82cc7b6ed2ca602947}} 
+N\+O\+T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+ED&\\
+\hline
+
+\end{DoxyEnumFields}

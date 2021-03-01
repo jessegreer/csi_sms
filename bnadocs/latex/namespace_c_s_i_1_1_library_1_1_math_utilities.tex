@@ -1,0 +1,165 @@
+\hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities}{}\section{C\+S\+I.\+Library.\+Math\+Utilities Namespace Reference}
+\label{namespace_c_s_i_1_1_library_1_1_math_utilities}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_math_utilities_1_1_complex_array}{Complex\+Array}}
+\begin{DoxyCompactList}\small\item\em A set of array utilities for complex number arrays \end{DoxyCompactList}\item 
+class {\bfseries Digital\+Filters}
+\begin{DoxyCompactList}\small\item\em A class containing various methods that perform simple math operations. \end{DoxyCompactList}\item 
+class {\bfseries Engineering\+Conversions}
+\begin{DoxyCompactList}\small\item\em A class containing various methods that perform simple math operations. \end{DoxyCompactList}\item 
+class {\bfseries Fourier}
+\begin{DoxyCompactList}\small\item\em Static functions for doing various Fourier Operations. \end{DoxyCompactList}\item 
+class {\bfseries Simple\+Math}
+\begin{DoxyCompactList}\small\item\em A class containing various methods that perform simple math operations. \end{DoxyCompactList}\item 
+class {\bfseries Statistics}
+\begin{DoxyCompactList}\small\item\em A class containing various methods that perform statistics on arrays. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine}{Statistics\+Engine}}
+\begin{DoxyCompactList}\small\item\em Iterative Curve-\/fit for Y= slope$\ast$\+X+ Y0 Calculates slope, Y-\/intercept, and offset (of the form Y = slope$\ast$(X-\/\+X0) + Y0) Also, calculates Standard Deviation for X, Y, and r$^\wedge$2 (test for fit) \end{DoxyCompactList}\item 
+class {\bfseries Trigonometry}
+\begin{DoxyCompactList}\small\item\em A class containing various methods that perform operations related to trigonometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13}{Enum\+Fourier\+Direction}} \{ \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13abfec72bb37910c61f36b6c29a1f7ec31}{Enum\+Fourier\+Direction.\+F\+O\+R\+W\+A\+RD}} = 1, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13a1955bdc302911f376074eb9b02e56639}{Enum\+Fourier\+Direction.\+I\+N\+V\+E\+R\+SE}} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em The direction of the fourier transform. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06}{Enum\+Fourier\+Window}} \{ \newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab50339a10e1de285ac99d4c3990b8693}{Enum\+Fourier\+Window.\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8e8e58fe94ab307a826e087028a7c01a}{Enum\+Fourier\+Window.\+R\+E\+C\+T\+A\+N\+G\+LE}} = 1, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9bcd89070cae224dce305f5011659ef4}{Enum\+Fourier\+Window.\+T\+R\+I\+A\+N\+G\+LE}} = 2, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a6835c733fedbc14938310413c203aad5}{Enum\+Fourier\+Window.\+F\+L\+A\+T\+\_\+\+T\+OP}} = 3, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab88e580bff635f922a9f3d0e37fac433}{Enum\+Fourier\+Window.\+B\+L\+A\+C\+K\+M\+AN}} = 4, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06adcd5fc33e211f31cef0cd7cb36518d31}{Enum\+Fourier\+Window.\+E\+X\+P\+O\+N\+E\+N\+T\+I\+AL}} = 5, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a65f8928046bffc8d0f6a445a6ce4f63f}{Enum\+Fourier\+Window.\+H\+A\+M\+M\+I\+NG}} = 6, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06add3c91585535e3138c32ae3bad96fd83}{Enum\+Fourier\+Window.\+H\+A\+NN}} = 7, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06acf35cce3992ed77a02725d9fa66a00c5}{Enum\+Fourier\+Window.\+H\+A\+N\+N\+\_\+\+S\+C\+A\+L\+ED}} = 8, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a2f60fca947aac673061e7e2571954628}{Enum\+Fourier\+Window.\+H\+A\+N\+N\+\_\+\+S\+Q\+U\+A\+R\+ED}} = 9, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06afdc9fb4d3e50dd2d5d0b1ff8ce82df7b}{Enum\+Fourier\+Window.\+N\+U\+T\+T\+AL}} = 10, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ad186098159065904bf610c9b7ee3fee9}{Enum\+Fourier\+Window.\+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+N\+U\+T\+T\+AL}} = 11, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a571575ff930fc746f331e0f84155fac0}{Enum\+Fourier\+Window.\+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+H\+A\+R\+R\+IS}} = 12, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a51ccd66151f68fd057c6317c3edf672f}{Enum\+Fourier\+Window.\+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+H\+A\+R\+R\+I\+S\+\_\+7\+T\+E\+RM}} = 13, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a0fceff26ae86a047835cafbb6cadb1b9}{Enum\+Fourier\+Window.\+G\+A\+U\+S\+S\+I\+AN}} = 14, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ae66ba018ef96aa5c78c8fba787f43717}{Enum\+Fourier\+Window.\+C\+O\+S\+I\+NE}} = 15, 
+\newline
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9b49d8a6d505b416c90acf00e67acc83}{Enum\+Fourier\+Window.\+K\+A\+I\+S\+ER}} = 16, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8a0dcc785f765f4c5d2459011ca79ae2}{Enum\+Fourier\+Window.\+D\+O\+L\+P\+H\+\_\+\+C\+H\+E\+B\+Y\+S\+H\+EV}} = 17, 
+\mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a487e01095481e7cb90ce46925f0e87e3}{Enum\+Fourier\+Window.\+W\+E\+L\+CH}} = 18
+ \}
+\begin{DoxyCompactList}\small\item\em Windowing of a waveform (applied in the time-\/domain) causes its Fourier Transform to develop non-\/zer values (commonly called spectral leakage), e.\+g., if two sinusoids of different frequences are being comparied, the leakage can obscure the presence of two distinct frequencies, and can render them unresolvable. Also, random noise close to the frequency of interest can also be masked by this leakagle. Hamming and Hann are commonly used for narrowband application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13}} 
+\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!EnumFourierDirection@{EnumFourierDirection}}
+\index{EnumFourierDirection@{EnumFourierDirection}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}
+\subsubsection{\texorpdfstring{EnumFourierDirection}{EnumFourierDirection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13}{C\+S\+I.\+Library.\+Math\+Utilities.\+Enum\+Fourier\+Direction}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The direction of the fourier transform. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FORWARD@{FORWARD}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!FORWARD@{FORWARD}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13abfec72bb37910c61f36b6c29a1f7ec31}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13abfec72bb37910c61f36b6c29a1f7ec31}} 
+F\+O\+R\+W\+A\+RD&Forward direction. Usually in reference to moving from temporal representation to frequency representation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVERSE@{INVERSE}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!INVERSE@{INVERSE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13a1955bdc302911f376074eb9b02e56639}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_a25c85ccfcf761427d9af99edaac04c13a1955bdc302911f376074eb9b02e56639}} 
+I\+N\+V\+E\+R\+SE&Reverse direction. Usually in reference to moving from frequency representation to temporal representation \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06}} 
+\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!EnumFourierWindow@{EnumFourierWindow}}
+\index{EnumFourierWindow@{EnumFourierWindow}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}
+\subsubsection{\texorpdfstring{EnumFourierWindow}{EnumFourierWindow}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06}{C\+S\+I.\+Library.\+Math\+Utilities.\+Enum\+Fourier\+Window}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Windowing of a waveform (applied in the time-\/domain) causes its Fourier Transform to develop non-\/zer values (commonly called spectral leakage), e.\+g., if two sinusoids of different frequences are being comparied, the leakage can obscure the presence of two distinct frequencies, and can render them unresolvable. Also, random noise close to the frequency of interest can also be masked by this leakagle. Hamming and Hann are commonly used for narrowband application. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!NONE@{NONE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab50339a10e1de285ac99d4c3990b8693}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab50339a10e1de285ac99d4c3990b8693}} 
+N\+O\+NE&Do Not Apply Windowing Function Note\+: Sets Input Array elements to 1.\+0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RECTANGLE@{RECTANGLE}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!RECTANGLE@{RECTANGLE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8e8e58fe94ab307a826e087028a7c01a}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8e8e58fe94ab307a826e087028a7c01a}} 
+R\+E\+C\+T\+A\+N\+G\+LE&Rectangle Window; Removes N points from start and end, i.\+e., from \mbox{[}0 to start\+PT\mbox{]}=0.\+0 and \mbox{[}end\+PT to N-\/1\mbox{]}= 0.\+0, and \mbox{[}start\+PT to end\+PT\mbox{]} = 1.\+0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRIANGLE@{TRIANGLE}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!TRIANGLE@{TRIANGLE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9bcd89070cae224dce305f5011659ef4}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9bcd89070cae224dce305f5011659ef4}} 
+T\+R\+I\+A\+N\+G\+LE&Triangle \+: Linear Slope from index=0 to (N-\/1)/2 \mbox{[}0.\+0 to 1.\+0\mbox{]} and (N-\/1)/2 to (N-\/1) \mbox{[}1.\+0 to 0.\+0\mbox{]} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLAT\_TOP@{FLAT\_TOP}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!FLAT\_TOP@{FLAT\_TOP}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a6835c733fedbc14938310413c203aad5}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a6835c733fedbc14938310413c203aad5}} 
+F\+L\+A\+T\+\_\+\+T\+OP&Sin(x)/x \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACKMAN@{BLACKMAN}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!BLACKMAN@{BLACKMAN}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab88e580bff635f922a9f3d0e37fac433}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ab88e580bff635f922a9f3d0e37fac433}} 
+B\+L\+A\+C\+K\+M\+AN&Blackman \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXPONENTIAL@{EXPONENTIAL}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!EXPONENTIAL@{EXPONENTIAL}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06adcd5fc33e211f31cef0cd7cb36518d31}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06adcd5fc33e211f31cef0cd7cb36518d31}} 
+E\+X\+P\+O\+N\+E\+N\+T\+I\+AL&Exponential \{ $\vert$ exp(f(i) $\vert$ \} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAMMING@{HAMMING}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!HAMMING@{HAMMING}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a65f8928046bffc8d0f6a445a6ce4f63f}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a65f8928046bffc8d0f6a445a6ce4f63f}} 
+H\+A\+M\+M\+I\+NG&Hamming Function (optimal side-\/lobe minimum) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HANN@{HANN}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!HANN@{HANN}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06add3c91585535e3138c32ae3bad96fd83}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06add3c91585535e3138c32ae3bad96fd83}} 
+H\+A\+NN&Hann (similar to H\+A\+M\+M\+I\+NG and C\+OS window) \{number of non-\/zero F\+FT bins =3 Noise\+BW=1.\+5/N\} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HANN\_SCALED@{HANN\_SCALED}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!HANN\_SCALED@{HANN\_SCALED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06acf35cce3992ed77a02725d9fa66a00c5}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06acf35cce3992ed77a02725d9fa66a00c5}} 
+H\+A\+N\+N\+\_\+\+S\+C\+A\+L\+ED&Hann (similar to H\+A\+M\+M\+I\+NG and C\+OS window) \{number of non-\/zero F\+FT bins =3 Noise\+BW=1.\+5/N\} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HANN\_SQUARED@{HANN\_SQUARED}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!HANN\_SQUARED@{HANN\_SQUARED}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a2f60fca947aac673061e7e2571954628}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a2f60fca947aac673061e7e2571954628}} 
+H\+A\+N\+N\+\_\+\+S\+Q\+U\+A\+R\+ED&Hann-\/squared (Hann$^\wedge$2) \{number of non-\/zero F\+FT bins =5, Noise\+BW=35/18N=1.\+944/N\} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NUTTAL@{NUTTAL}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!NUTTAL@{NUTTAL}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06afdc9fb4d3e50dd2d5d0b1ff8ce82df7b}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06afdc9fb4d3e50dd2d5d0b1ff8ce82df7b}} 
+N\+U\+T\+T\+AL&Nuttal, C\+OS window with very low roll-\/off \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACKMAN\_NUTTAL@{BLACKMAN\_NUTTAL}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!BLACKMAN\_NUTTAL@{BLACKMAN\_NUTTAL}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ad186098159065904bf610c9b7ee3fee9}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ad186098159065904bf610c9b7ee3fee9}} 
+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+N\+U\+T\+T\+AL&Blackman-\/\+Nuttal with very flat side bands \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACKMAN\_HARRIS@{BLACKMAN\_HARRIS}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!BLACKMAN\_HARRIS@{BLACKMAN\_HARRIS}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a571575ff930fc746f331e0f84155fac0}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a571575ff930fc746f331e0f84155fac0}} 
+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+H\+A\+R\+R\+IS&Blackman-\/\+Harris \{4-\/term\} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACKMAN\_HARRIS\_7TERM@{BLACKMAN\_HARRIS\_7TERM}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!BLACKMAN\_HARRIS\_7TERM@{BLACKMAN\_HARRIS\_7TERM}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a51ccd66151f68fd057c6317c3edf672f}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a51ccd66151f68fd057c6317c3edf672f}} 
+B\+L\+A\+C\+K\+M\+A\+N\+\_\+\+H\+A\+R\+R\+I\+S\+\_\+7\+T\+E\+RM&Blackman-\/\+Harris \{7-\/term\} Usage\+: signal-\/to-\/noise ratio (has the highest dynamic range) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAUSSIAN@{GAUSSIAN}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!GAUSSIAN@{GAUSSIAN}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a0fceff26ae86a047835cafbb6cadb1b9}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a0fceff26ae86a047835cafbb6cadb1b9}} 
+G\+A\+U\+S\+S\+I\+AN&Gaussian (eigenfunction of the Fourier Transform) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COSINE@{COSINE}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!COSINE@{COSINE}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ae66ba018ef96aa5c78c8fba787f43717}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06ae66ba018ef96aa5c78c8fba787f43717}} 
+C\+O\+S\+I\+NE&Cosine Window \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KAISER@{KAISER}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!KAISER@{KAISER}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9b49d8a6d505b416c90acf00e67acc83}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a9b49d8a6d505b416c90acf00e67acc83}} 
+K\+A\+I\+S\+ER&Kaiser (form of Bessel) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOLPH\_CHEBYSHEV@{DOLPH\_CHEBYSHEV}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!DOLPH\_CHEBYSHEV@{DOLPH\_CHEBYSHEV}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8a0dcc785f765f4c5d2459011ca79ae2}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a8a0dcc785f765f4c5d2459011ca79ae2}} 
+D\+O\+L\+P\+H\+\_\+\+C\+H\+E\+B\+Y\+S\+H\+EV&Dolph-\/\+Chebyshev (defined in terms of real-\/valued D\+FT) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WELCH@{WELCH}!CSI.Library.MathUtilities@{CSI.Library.MathUtilities}}\index{CSI.Library.MathUtilities@{CSI.Library.MathUtilities}!WELCH@{WELCH}}}\mbox{\Hypertarget{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a487e01095481e7cb90ce46925f0e87e3}\label{namespace_c_s_i_1_1_library_1_1_math_utilities_ae198dd0fb970192351d3966c18b65f06a487e01095481e7cb90ce46925f0e87e3}} 
+W\+E\+L\+CH&Welse -\/ Parabolic \\
+\hline
+
+\end{DoxyEnumFields}

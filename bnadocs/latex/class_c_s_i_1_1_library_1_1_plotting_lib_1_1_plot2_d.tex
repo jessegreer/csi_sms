@@ -1,0 +1,440 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{}\section{C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2D Class Reference}
+\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+
+
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} Class  
+
+
+Inheritance diagram for C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_1_1_point_d}{PointD}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_1_1_point_d}{PointD}} \{double X, double Y\} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225}{Enum\+Domain\+Type}} \{ \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225abbea0a3fc04ecdea35f985ee188ad32d}{Enum\+Domain\+Type.\+T\+I\+M\+E\+\_\+\+D\+O\+M\+A\+IN}} = 0, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225acbe443986b0fe28e62806b72929d375e}{Enum\+Domain\+Type.\+F\+R\+E\+Q\+\_\+\+D\+O\+M\+A\+IN}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies Data Domain type \{T\+I\+ME or F\+R\+E\+Q\+U\+E\+N\+CY\} \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{Enum\+Plot\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa74c53bcd3dcb2bb79993b2fec37d362a}{Enum\+Plot\+Type.\+XY}} = 0, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fac52cf2e1d070c68e40ac69c2667901ac}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}} = 1, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa5fa9cc75a244a268a87e9aa160bab231}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+A\+M\+PL}} = 2, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fad1c0249adbd710c31cb69154188ef613}{Enum\+Plot\+Type.\+F\+R\+E\+Q\+\_\+\+A\+M\+PL}} = 3, 
+\newline
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faf44272fc5842237f3e040659b6616002}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab8d152fc55dd265c40d4437702cf10e8}{Enum\+Plot\+Type.\+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab41ea65fc930946939db050be3546833}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa2294df238ae7f077a85f564969db6e17}{Enum\+Plot\+Type.\+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20}}, 
+\newline
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa71ee0ad2d59521ec05bee419cb7a7a81}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+D\+B10}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa94f4f28a38cd50741b6101e03c304101}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+D\+B20}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa50dd97333b9564ef1065d4691a3d0171}{Enum\+Plot\+Type.\+I\+Q\+\_\+\+T\+I\+M\+E\+D\+O\+M\+A\+IN}}, 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faa3d707e2fddcef18287bdc15e54a3e04}{Enum\+Plot\+Type.\+I\+Q\+\_\+\+F\+R\+E\+Q\+D\+O\+M\+A\+IN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies Data type for plotting \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a387e59212204675da745d312a9b63c98}{Plot2D}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}\mbox{[}$\,$\mbox{]} xy\+Array, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{Enum\+Plot\+Type}} plot\+Type=\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa5fa9cc75a244a268a87e9aa160bab231}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+A\+M\+PL}}, string title=\char`\"{}$<$no title specified$>$\char`\"{}, string x\+Label=\char`\"{}X\char`\"{}, string y\+Label=\char`\"{}Y\char`\"{}, double set\+Xmin=double.\+Min\+Value, double set\+Xmax=double.\+Max\+Value, double set\+Ymin=double.\+Min\+Value, double set\+Ymax=double.\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} ; Input X\+Y\+\_\+\+Point\mbox{[}\mbox{]} Data\+Type supported \+: 1) T\+I\+M\+E\+\_\+\+A\+M\+PL, 2) F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10, or D\+B20 Inputs\+: error\+List \+: error log xy\+Array \+: X\+Y\+\_\+\+Point\mbox{[}\mbox{]} array plot\+Type \+: Data\+Type supported \+: 1) T\+I\+M\+E\+\_\+\+A\+M\+PL, 2) F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10, or D\+B20 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a94d11a9efa6900ccea84bf4b56a1b0b7}{Plot2D}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} seterror\+List, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}\mbox{[}$\,$\mbox{]} I\+Qdata\+Array, double sample\+Rate\+Hz, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{Enum\+Plot\+Type}} plot\+Type=\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa50dd97333b9564ef1065d4691a3d0171}{Enum\+Plot\+Type.\+I\+Q\+\_\+\+T\+I\+M\+E\+D\+O\+M\+A\+IN}}, string title=\char`\"{}$<$no title specified$>$\char`\"{}, string x\+Label=\char`\"{}X\char`\"{}, string y\+Label=\char`\"{}Y\char`\"{}, double set\+Xmin=double.\+Min\+Value, double set\+Xmax=double.\+Max\+Value, double set\+Ymin=double.\+Min\+Value, double set\+Ymax=double.\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} Constructor for Complex\mbox{[}\mbox{]} data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a7736899c69b8c63ff36585742c76a84a}{Generate\+\_\+\+X\+Y\+\_\+\+Point\+Array}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, double freq\+Start\+HZ, double freq\+Stop\+HZ, double\mbox{[}$\,$\mbox{]} Amplarray)
+\begin{DoxyCompactList}\small\item\em Add Freq to double array, i.\+e., convert double\mbox{[}\mbox{]} amplitude to X\+Y\+\_\+\+Point\mbox{[}\mbox{]}$<$freq, ampl$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae40873877ea1442aa09dcf071b92103b}{Save\+X\+Y\+\_\+\+Array\+To\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}\mbox{[}$\,$\mbox{]} xy\+Array)
+\begin{DoxyCompactList}\small\item\em Used to Debug \mbox{[}change to private before release\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}{Save\+Complex\+Array\+To\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}\mbox{[}$\,$\mbox{]} c\+Array)
+\begin{DoxyCompactList}\small\item\em Used to Debug \mbox{[}change to private before release\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a2aa69e75894313c6cc467fea3f849885}{Save\+Double\+Array\+To\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath, double\mbox{[}$\,$\mbox{]} d\+Array)
+\begin{DoxyCompactList}\small\item\em Used to Debug \mbox{[}change to private before release\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a4b75bc81bfee1c7d9e843a0928915190}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a4b75bc81bfee1c7d9e843a0928915190}} 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{[}$\,$\mbox{]} {\bfseries Read\+R\+S\+\_\+\+Z\+V\+A\+\_\+\+Complex\+Array\+From\+File} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, int npts, string filepath, int iskip\+Lines=3)
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_aa0092b18d36582318cadd2dfb2024ed9}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_aa0092b18d36582318cadd2dfb2024ed9}} 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} {\bfseries Read\+R\+S\+\_\+\+Z\+V\+A\+\_\+\+X\+Yarray\+From\+File} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, int npts, string filepath, int iskip\+Lines=3)
+\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a32b1f7659fee9593d8c22eec9ef0421d}{Read\+Complex\+Array\+From\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath)
+\begin{DoxyCompactList}\small\item\em Read Complex Array (stored with \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}{Save\+Complex\+Array\+To\+File()}}) from file \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae13604c7f537fce584a79105c415fef2}{Read\+X\+Y\+Array\+From\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath)
+\begin{DoxyCompactList}\small\item\em Read XY Array (stored with Save\+X\+Y\+Array\+To\+File()) from file \end{DoxyCompactList}\item 
+static double \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a5384d3f88757fb6a8b297a894016609b}{Read\+Double\+Array\+From\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath)
+\begin{DoxyCompactList}\small\item\em Read Double Array (stored with \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}{Save\+Complex\+Array\+To\+File()}}) from file \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a07bb248c172593f7bd5554a8452135e4}{Read\+Tek\+O\+S\+C\+From\+C\+S\+V\+File}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}} error\+List, string filepath, int file\+Index)
+\begin{DoxyCompactList}\small\item\em Read Tek O\+SD C\+SV file Format\+: Skip first 17 lines. Time, Voltage, Peak Hold Values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a6376cff01d26a22a8012d55e8af2eb94}{On\+Paint}} (Paint\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em On\+Paint \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_afe5dde960d2dbef84ca47248f330efd8}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} Class 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!EnumDomainType@{EnumDomainType}}
+\index{EnumDomainType@{EnumDomainType}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{EnumDomainType}{EnumDomainType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225}{C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Enum\+Domain\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Specifies Data Domain type \{T\+I\+ME or F\+R\+E\+Q\+U\+E\+N\+CY\} 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_DOMAIN@{TIME\_DOMAIN}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_DOMAIN@{TIME\_DOMAIN}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225abbea0a3fc04ecdea35f985ee188ad32d}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225abbea0a3fc04ecdea35f985ee188ad32d}} 
+T\+I\+M\+E\+\_\+\+D\+O\+M\+A\+IN&T\+I\+M\+E\+\_\+\+D\+O\+M\+A\+IN \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREQ\_DOMAIN@{FREQ\_DOMAIN}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!FREQ\_DOMAIN@{FREQ\_DOMAIN}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225acbe443986b0fe28e62806b72929d375e}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a8d130cc123e2a798267192fa0c2af225acbe443986b0fe28e62806b72929d375e}} 
+F\+R\+E\+Q\+\_\+\+D\+O\+M\+A\+IN&F\+R\+E\+Q\+\_\+\+D\+O\+M\+A\+IN \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!EnumPlotType@{EnumPlotType}}
+\index{EnumPlotType@{EnumPlotType}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{EnumPlotType}{EnumPlotType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Enum\+Plot\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Specifies Data type for plotting 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XY@{XY}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!XY@{XY}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa74c53bcd3dcb2bb79993b2fec37d362a}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa74c53bcd3dcb2bb79993b2fec37d362a}} 
+XY&XY \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_FREQ\_HZ@{TIME\_FREQ\_HZ}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_FREQ\_HZ@{TIME\_FREQ\_HZ}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fac52cf2e1d070c68e40ac69c2667901ac}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fac52cf2e1d070c68e40ac69c2667901ac}} 
+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ&T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_AMPL@{TIME\_AMPL}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_AMPL@{TIME\_AMPL}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa5fa9cc75a244a268a87e9aa160bab231}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa5fa9cc75a244a268a87e9aa160bab231}} 
+T\+I\+M\+E\+\_\+\+A\+M\+PL&T\+I\+M\+E\+\_\+\+A\+M\+PL \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREQ\_AMPL@{FREQ\_AMPL}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!FREQ\_AMPL@{FREQ\_AMPL}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fad1c0249adbd710c31cb69154188ef613}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fad1c0249adbd710c31cb69154188ef613}} 
+F\+R\+E\+Q\+\_\+\+A\+M\+PL&F\+R\+E\+Q\+\_\+\+A\+M\+PL \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_AMPL\_DB10@{TIME\_AMPL\_DB10}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_AMPL\_DB10@{TIME\_AMPL\_DB10}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faf44272fc5842237f3e040659b6616002}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faf44272fc5842237f3e040659b6616002}} 
+T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10&T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREQ\_AMPL\_DB10@{FREQ\_AMPL\_DB10}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!FREQ\_AMPL\_DB10@{FREQ\_AMPL\_DB10}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab8d152fc55dd265c40d4437702cf10e8}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab8d152fc55dd265c40d4437702cf10e8}} 
+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10&F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_AMPL\_DB20@{TIME\_AMPL\_DB20}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_AMPL\_DB20@{TIME\_AMPL\_DB20}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab41ea65fc930946939db050be3546833}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fab41ea65fc930946939db050be3546833}} 
+T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20&T\+I\+M\+E\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREQ\_AMPL\_DB20@{FREQ\_AMPL\_DB20}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!FREQ\_AMPL\_DB20@{FREQ\_AMPL\_DB20}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa2294df238ae7f077a85f564969db6e17}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa2294df238ae7f077a85f564969db6e17}} 
+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20&F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B20 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_FREQ\_DB10@{TIME\_FREQ\_DB10}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_FREQ\_DB10@{TIME\_FREQ\_DB10}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa71ee0ad2d59521ec05bee419cb7a7a81}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa71ee0ad2d59521ec05bee419cb7a7a81}} 
+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+D\+B10&T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L10 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME\_FREQ\_DB20@{TIME\_FREQ\_DB20}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!TIME\_FREQ\_DB20@{TIME\_FREQ\_DB20}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa94f4f28a38cd50741b6101e03c304101}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa94f4f28a38cd50741b6101e03c304101}} 
+T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+D\+B20&T\+I\+M\+E\+\_\+\+F\+R\+E\+Q\+\_\+\+A\+M\+P\+L20 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IQ\_TIMEDOMAIN@{IQ\_TIMEDOMAIN}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!IQ\_TIMEDOMAIN@{IQ\_TIMEDOMAIN}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa50dd97333b9564ef1065d4691a3d0171}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa50dd97333b9564ef1065d4691a3d0171}} 
+I\+Q\+\_\+\+T\+I\+M\+E\+D\+O\+M\+A\+IN&I\+Q\+\_\+\+T\+I\+M\+E\+D\+O\+M\+A\+IN \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IQ\_FREQDOMAIN@{IQ\_FREQDOMAIN}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!IQ\_FREQDOMAIN@{IQ\_FREQDOMAIN}}}\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faa3d707e2fddcef18287bdc15e54a3e04}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98faa3d707e2fddcef18287bdc15e54a3e04}} 
+I\+Q\+\_\+\+F\+R\+E\+Q\+D\+O\+M\+A\+IN&I\+Q\+\_\+\+F\+R\+E\+Q\+D\+O\+M\+A\+IN \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a387e59212204675da745d312a9b63c98}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a387e59212204675da745d312a9b63c98}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!Plot2D@{Plot2D}}
+\index{Plot2D@{Plot2D}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{Plot2D()}{Plot2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Plot2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]}}]{xy\+Array,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{Enum\+Plot\+Type}}}]{plot\+Type = {\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa5fa9cc75a244a268a87e9aa160bab231}{Enum\+Plot\+Type.\+T\+I\+M\+E\+\_\+\+A\+M\+PL}}},  }\item[{string}]{title = {\ttfamily \char`\"{}$<$no~title~specified$>$\char`\"{}},  }\item[{string}]{x\+Label = {\ttfamily \char`\"{}X\char`\"{}},  }\item[{string}]{y\+Label = {\ttfamily \char`\"{}Y\char`\"{}},  }\item[{double}]{set\+Xmin = {\ttfamily double.MinValue},  }\item[{double}]{set\+Xmax = {\ttfamily double.MaxValue},  }\item[{double}]{set\+Ymin = {\ttfamily double.MinValue},  }\item[{double}]{set\+Ymax = {\ttfamily double.MaxValue} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} ; Input X\+Y\+\_\+\+Point\mbox{[}\mbox{]} Data\+Type supported \+: 1) T\+I\+M\+E\+\_\+\+A\+M\+PL, 2) F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10, or D\+B20 Inputs\+: error\+List \+: error log xy\+Array \+: X\+Y\+\_\+\+Point\mbox{[}\mbox{]} array plot\+Type \+: Data\+Type supported \+: 1) T\+I\+M\+E\+\_\+\+A\+M\+PL, 2) F\+R\+E\+Q\+\_\+\+A\+M\+P\+L\+\_\+\+D\+B10, or D\+B20 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em xy\+Array} & \\
+\hline
+{\em plot\+Type} & \\
+\hline
+{\em title} & \\
+\hline
+{\em x\+Label} & \\
+\hline
+{\em y\+Label} & \\
+\hline
+{\em set\+Xmin} & \\
+\hline
+{\em set\+Xmax} & \\
+\hline
+{\em set\+Ymin} & \\
+\hline
+{\em set\+Ymax} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a94d11a9efa6900ccea84bf4b56a1b0b7}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a94d11a9efa6900ccea84bf4b56a1b0b7}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!Plot2D@{Plot2D}}
+\index{Plot2D@{Plot2D}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{Plot2D()}{Plot2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Plot2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{seterror\+List,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{[}$\,$\mbox{]}}]{I\+Qdata\+Array,  }\item[{double}]{sample\+Rate\+Hz,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98f}{Enum\+Plot\+Type}}}]{plot\+Type = {\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ad94829020c4869820a1ecb690d5ea98fa50dd97333b9564ef1065d4691a3d0171}{Enum\+Plot\+Type.\+I\+Q\+\_\+\+T\+I\+M\+E\+D\+O\+M\+A\+IN}}},  }\item[{string}]{title = {\ttfamily \char`\"{}$<$no~title~specified$>$\char`\"{}},  }\item[{string}]{x\+Label = {\ttfamily \char`\"{}X\char`\"{}},  }\item[{string}]{y\+Label = {\ttfamily \char`\"{}Y\char`\"{}},  }\item[{double}]{set\+Xmin = {\ttfamily double.MinValue},  }\item[{double}]{set\+Xmax = {\ttfamily double.MaxValue},  }\item[{double}]{set\+Ymin = {\ttfamily double.MinValue},  }\item[{double}]{set\+Ymax = {\ttfamily double.MaxValue} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d}{Plot2D}} Constructor for Complex\mbox{[}\mbox{]} data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seterror\+List} & \\
+\hline
+{\em I\+Qdata\+Array} & \\
+\hline
+{\em sample\+Rate\+Hz} & \\
+\hline
+{\em plot\+Type} & \\
+\hline
+{\em title} & \\
+\hline
+{\em x\+Label} & \\
+\hline
+{\em y\+Label} & \\
+\hline
+{\em set\+Xmin} & \\
+\hline
+{\em set\+Xmax} & \\
+\hline
+{\em set\+Ymin} & \\
+\hline
+{\em set\+Ymax} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_afe5dde960d2dbef84ca47248f330efd8}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_afe5dde960d2dbef84ca47248f330efd8}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a7736899c69b8c63ff36585742c76a84a}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a7736899c69b8c63ff36585742c76a84a}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!Generate\_XY\_PointArray@{Generate\_XY\_PointArray}}
+\index{Generate\_XY\_PointArray@{Generate\_XY\_PointArray}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{Generate\_XY\_PointArray()}{Generate\_XY\_PointArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Generate\+\_\+\+X\+Y\+\_\+\+Point\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{double}]{freq\+Start\+HZ,  }\item[{double}]{freq\+Stop\+HZ,  }\item[{double \mbox{[}$\,$\mbox{]}}]{Amplarray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add Freq to double array, i.\+e., convert double\mbox{[}\mbox{]} amplitude to X\+Y\+\_\+\+Point\mbox{[}\mbox{]}$<$freq, ampl$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em freq\+Start\+HZ} & \\
+\hline
+{\em freq\+Stop\+HZ} & \\
+\hline
+{\em Amplarray} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a6376cff01d26a22a8012d55e8af2eb94}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a6376cff01d26a22a8012d55e8af2eb94}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily override void C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+On\+Paint (\begin{DoxyParamCaption}\item[{Paint\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+On\+Paint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a32b1f7659fee9593d8c22eec9ef0421d}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a32b1f7659fee9593d8c22eec9ef0421d}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!ReadComplexArrayFromFile@{ReadComplexArrayFromFile}}
+\index{ReadComplexArrayFromFile@{ReadComplexArrayFromFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{ReadComplexArrayFromFile()}{ReadComplexArrayFromFile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Read\+Complex\+Array\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read Complex Array (stored with \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}{Save\+Complex\+Array\+To\+File()}}) from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a5384d3f88757fb6a8b297a894016609b}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a5384d3f88757fb6a8b297a894016609b}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!ReadDoubleArrayFromFile@{ReadDoubleArrayFromFile}}
+\index{ReadDoubleArrayFromFile@{ReadDoubleArrayFromFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{ReadDoubleArrayFromFile()}{ReadDoubleArrayFromFile()}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Read\+Double\+Array\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read Double Array (stored with \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}{Save\+Complex\+Array\+To\+File()}}) from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a07bb248c172593f7bd5554a8452135e4}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a07bb248c172593f7bd5554a8452135e4}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!ReadTekOSCFromCSVFile@{ReadTekOSCFromCSVFile}}
+\index{ReadTekOSCFromCSVFile@{ReadTekOSCFromCSVFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{ReadTekOSCFromCSVFile()}{ReadTekOSCFromCSVFile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Read\+Tek\+O\+S\+C\+From\+C\+S\+V\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath,  }\item[{int}]{file\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read Tek O\+SD C\+SV file Format\+: Skip first 17 lines. Time, Voltage, Peak Hold Values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae13604c7f537fce584a79105c415fef2}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae13604c7f537fce584a79105c415fef2}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!ReadXYArrayFromFile@{ReadXYArrayFromFile}}
+\index{ReadXYArrayFromFile@{ReadXYArrayFromFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{ReadXYArrayFromFile()}{ReadXYArrayFromFile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]} C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Read\+X\+Y\+Array\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read XY Array (stored with Save\+X\+Y\+Array\+To\+File()) from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a0959acd193403a2feaaad7940884ad12}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!SaveComplexArrayToFile@{SaveComplexArrayToFile}}
+\index{SaveComplexArrayToFile@{SaveComplexArrayToFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{SaveComplexArrayToFile()}{SaveComplexArrayToFile()}}
+{\footnotesize\ttfamily static void C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Save\+Complex\+Array\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{[}$\,$\mbox{]}}]{c\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Used to Debug \mbox{[}change to private before release\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+{\em c\+Array} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a2aa69e75894313c6cc467fea3f849885}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_a2aa69e75894313c6cc467fea3f849885}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!SaveDoubleArrayToFile@{SaveDoubleArrayToFile}}
+\index{SaveDoubleArrayToFile@{SaveDoubleArrayToFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{SaveDoubleArrayToFile()}{SaveDoubleArrayToFile()}}
+{\footnotesize\ttfamily static void C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Save\+Double\+Array\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath,  }\item[{double \mbox{[}$\,$\mbox{]}}]{d\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Used to Debug \mbox{[}change to private before release\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+{\em d\+Array} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae40873877ea1442aa09dcf071b92103b}\label{class_c_s_i_1_1_library_1_1_plotting_lib_1_1_plot2_d_ae40873877ea1442aa09dcf071b92103b}} 
+\index{CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}!SaveXY\_ArrayToFile@{SaveXY\_ArrayToFile}}
+\index{SaveXY\_ArrayToFile@{SaveXY\_ArrayToFile}!CSI.Library.PlottingLib.Plot2D@{CSI.Library.PlottingLib.Plot2D}}
+\subsubsection{\texorpdfstring{SaveXY\_ArrayToFile()}{SaveXY\_ArrayToFile()}}
+{\footnotesize\ttfamily static void C\+S\+I.\+Library.\+Plotting\+Lib.\+Plot2\+D.\+Save\+X\+Y\+\_\+\+Array\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_errors_1_1_error_list}{Error\+List}}}]{error\+List,  }\item[{string}]{filepath,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{[}$\,$\mbox{]}}]{xy\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Used to Debug \mbox{[}change to private before release\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+List} & \\
+\hline
+{\em filepath} & \\
+\hline
+{\em xy\+Array} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Plot2\+D.\+cs\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Plot2\+D.\+designer.\+cs\end{DoxyCompactItemize}

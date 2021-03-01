@@ -1,0 +1,342 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{}\section{C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation Class Reference}
+\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+
+
+Defines a point that failed the limit check.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a8c51ba0cfcbfc757b698ea7681c164e6}{Violation}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} violation\+Point, double low\+Limit\+At\+Violation\+Point, bool low\+Limit\+Is\+Inclusive, double high\+Limit\+At\+Violation\+Point, bool high\+Limit\+Is\+Inclusive, Enum\+Violation\+Type violation\+Type, int segment\+Index=-\/1)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_ac05d3e5edc82aed8e5c4da8e5caf9897}{Deep\+Copy}} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of this instance that is completely separate. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7178a73e1c7fbf93105d7f6a14c52c93}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Compares all members for value equality. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_adf744b264509790663aacfefbd73bad8}{Get\+Hash\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a4e93e075cf895577206d1abfe44aa47f}{Ascending\+\_\+\+Y\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending Y\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7c82d99abe8c6efbfcb6b7f58281c951}{Descending\+\_\+\+Y\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending Y\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a152a375e0f4b3b218539d093b359452f}{Ascending\+\_\+\+X\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a697887c43a44ef0ce30e74359fa3f1ea}{Descending\+\_\+\+X\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a647e6fc658bf99fef6b59014364876a0}{Ascending\+Violation\+Magnitude\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a70554b24254c91c11e3eb63ba75f902c}{Descending\+Violation\+Magnitude\+Comparer}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} left, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_addb0a13f513102bea8226f4c6711891d}{Violation\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The point that failed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_aa650d5f92172c2cbe2f8e34146646e0f}{Low\+Limit\+At\+Violation\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The low limit at the failing point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_abb72abe99321cc67c1bce21cbaadd33f}{Low\+Limit\+Is\+Inclusive}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The low limit inclusivity at the failing point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a0dffbe18b46285ebb2c9905aab6a42bc}{High\+Limit\+At\+Violation\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The high limit at the failing point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a553d3fe940dee1a09f69c86147491320}{High\+Limit\+Is\+Inclusive}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The high limit inclusivity at the failing point. \end{DoxyCompactList}\item 
+Enum\+Violation\+Type \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a92d66c2b454170a9187bf5504b0da67f}{Violation\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How the point failed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a494a0076c5ab50bc93f973cab04b5890}{Segment\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The index of the associated Segments\+Violations\+Info if one exists. Otherwise, returns -\/1. This index pertains to the High\+Limit\+Segments\+Violations\+Info if the violation is over high limit, and Low\+Limit\+Segments\+Violations\+Info if the violation is below low limit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a19a8e2a0561d5f927877b739aeb9063a}{Violation\+Magnitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The delta between the violation point\textquotesingle{}s y value and the failed limit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a point that failed the limit check. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a8c51ba0cfcbfc757b698ea7681c164e6}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a8c51ba0cfcbfc757b698ea7681c164e6}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Violation@{Violation}}
+\index{Violation@{Violation}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Violation()}{Violation()}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Violation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{violation\+Point,  }\item[{double}]{low\+Limit\+At\+Violation\+Point,  }\item[{bool}]{low\+Limit\+Is\+Inclusive,  }\item[{double}]{high\+Limit\+At\+Violation\+Point,  }\item[{bool}]{high\+Limit\+Is\+Inclusive,  }\item[{Enum\+Violation\+Type}]{violation\+Type,  }\item[{int}]{segment\+Index = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em violation\+Point} & The Data Point that failed.\\
+\hline
+{\em low\+Limit\+At\+Violation\+Point} & \\
+\hline
+{\em low\+Limit\+Is\+Inclusive} & \\
+\hline
+{\em high\+Limit\+At\+Violation\+Point} & \\
+\hline
+{\em high\+Limit\+Is\+Inclusive} & \\
+\hline
+{\em violation\+Type} & \\
+\hline
+{\em segment\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a152a375e0f4b3b218539d093b359452f}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a152a375e0f4b3b218539d093b359452f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Ascending\_X\_ValuesComparer@{Ascending\_X\_ValuesComparer}}
+\index{Ascending\_X\_ValuesComparer@{Ascending\_X\_ValuesComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Ascending\_X\_ValuesComparer()}{Ascending\_X\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Ascending\+\_\+\+X\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a4e93e075cf895577206d1abfe44aa47f}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a4e93e075cf895577206d1abfe44aa47f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Ascending\_Y\_ValuesComparer@{Ascending\_Y\_ValuesComparer}}
+\index{Ascending\_Y\_ValuesComparer@{Ascending\_Y\_ValuesComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Ascending\_Y\_ValuesComparer()}{Ascending\_Y\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending Y\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a647e6fc658bf99fef6b59014364876a0}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a647e6fc658bf99fef6b59014364876a0}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!AscendingViolationMagnitudeComparer@{AscendingViolationMagnitudeComparer}}
+\index{AscendingViolationMagnitudeComparer@{AscendingViolationMagnitudeComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{AscendingViolationMagnitudeComparer()}{AscendingViolationMagnitudeComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Ascending\+Violation\+Magnitude\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_ac05d3e5edc82aed8e5c4da8e5caf9897}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_ac05d3e5edc82aed8e5c4da8e5caf9897}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!DeepCopy@{DeepCopy}}
+\index{DeepCopy@{DeepCopy}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{DeepCopy()}{DeepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of this instance that is completely separate. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a697887c43a44ef0ce30e74359fa3f1ea}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a697887c43a44ef0ce30e74359fa3f1ea}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Descending\_X\_ValuesComparer@{Descending\_X\_ValuesComparer}}
+\index{Descending\_X\_ValuesComparer@{Descending\_X\_ValuesComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Descending\_X\_ValuesComparer()}{Descending\_X\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Descending\+\_\+\+X\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7c82d99abe8c6efbfcb6b7f58281c951}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7c82d99abe8c6efbfcb6b7f58281c951}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Descending\_Y\_ValuesComparer@{Descending\_Y\_ValuesComparer}}
+\index{Descending\_Y\_ValuesComparer@{Descending\_Y\_ValuesComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Descending\_Y\_ValuesComparer()}{Descending\_Y\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Descending\+\_\+\+Y\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending Y\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a70554b24254c91c11e3eb63ba75f902c}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a70554b24254c91c11e3eb63ba75f902c}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!DescendingViolationMagnitudeComparer@{DescendingViolationMagnitudeComparer}}
+\index{DescendingViolationMagnitudeComparer@{DescendingViolationMagnitudeComparer}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{DescendingViolationMagnitudeComparer()}{DescendingViolationMagnitudeComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Descending\+Violation\+Magnitude\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{left,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation}{Violation}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. Violation.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7178a73e1c7fbf93105d7f6a14c52c93}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a7178a73e1c7fbf93105d7f6a14c52c93}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!Equals@{Equals}}
+\index{Equals@{Equals}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares all members for value equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_adf744b264509790663aacfefbd73bad8}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_adf744b264509790663aacfefbd73bad8}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a0dffbe18b46285ebb2c9905aab6a42bc}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a0dffbe18b46285ebb2c9905aab6a42bc}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!HighLimitAtViolationPoint@{HighLimitAtViolationPoint}}
+\index{HighLimitAtViolationPoint@{HighLimitAtViolationPoint}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{HighLimitAtViolationPoint}{HighLimitAtViolationPoint}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+High\+Limit\+At\+Violation\+Point\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The high limit at the failing point. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a553d3fe940dee1a09f69c86147491320}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a553d3fe940dee1a09f69c86147491320}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!HighLimitIsInclusive@{HighLimitIsInclusive}}
+\index{HighLimitIsInclusive@{HighLimitIsInclusive}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{HighLimitIsInclusive}{HighLimitIsInclusive}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+High\+Limit\+Is\+Inclusive\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The high limit inclusivity at the failing point. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_aa650d5f92172c2cbe2f8e34146646e0f}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_aa650d5f92172c2cbe2f8e34146646e0f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!LowLimitAtViolationPoint@{LowLimitAtViolationPoint}}
+\index{LowLimitAtViolationPoint@{LowLimitAtViolationPoint}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{LowLimitAtViolationPoint}{LowLimitAtViolationPoint}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Low\+Limit\+At\+Violation\+Point\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The low limit at the failing point. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_abb72abe99321cc67c1bce21cbaadd33f}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_abb72abe99321cc67c1bce21cbaadd33f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!LowLimitIsInclusive@{LowLimitIsInclusive}}
+\index{LowLimitIsInclusive@{LowLimitIsInclusive}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{LowLimitIsInclusive}{LowLimitIsInclusive}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Low\+Limit\+Is\+Inclusive\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The low limit inclusivity at the failing point. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a494a0076c5ab50bc93f973cab04b5890}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a494a0076c5ab50bc93f973cab04b5890}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!SegmentIndex@{SegmentIndex}}
+\index{SegmentIndex@{SegmentIndex}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{SegmentIndex}{SegmentIndex}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Segment\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The index of the associated Segments\+Violations\+Info if one exists. Otherwise, returns -\/1. This index pertains to the High\+Limit\+Segments\+Violations\+Info if the violation is over high limit, and Low\+Limit\+Segments\+Violations\+Info if the violation is below low limit. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a19a8e2a0561d5f927877b739aeb9063a}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a19a8e2a0561d5f927877b739aeb9063a}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!ViolationMagnitude@{ViolationMagnitude}}
+\index{ViolationMagnitude@{ViolationMagnitude}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{ViolationMagnitude}{ViolationMagnitude}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Violation\+Magnitude\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The delta between the violation point\textquotesingle{}s y value and the failed limit. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_addb0a13f513102bea8226f4c6711891d}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_addb0a13f513102bea8226f4c6711891d}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!ViolationPoint@{ViolationPoint}}
+\index{ViolationPoint@{ViolationPoint}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{ViolationPoint}{ViolationPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Violation\+Point\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The point that failed. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a92d66c2b454170a9187bf5504b0da67f}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_violation_a92d66c2b454170a9187bf5504b0da67f}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}!ViolationType@{ViolationType}}
+\index{ViolationType@{ViolationType}!CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation@{CSI.Library.ArrayUtilities.ArrayLimitChecks.Violation}}
+\subsubsection{\texorpdfstring{ViolationType}{ViolationType}}
+{\footnotesize\ttfamily Enum\+Violation\+Type C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Violation.\+Violation\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How the point failed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Array\+Limit\+Checks.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine}{}\section{C\+S\+I.\+Library.\+Math\+Utilities.\+Statistics\+Engine Class Reference}
+\label{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine}\index{CSI.Library.MathUtilities.StatisticsEngine@{CSI.Library.MathUtilities.StatisticsEngine}}
+
+
+Iterative Curve-\/fit for Y= slope$\ast$\+X+ Y0 Calculates slope, Y-\/intercept, and offset (of the form Y = slope$\ast$(X-\/\+X0) + Y0) Also, calculates Standard Deviation for X, Y, and r$^\wedge$2 (test for fit)  
+
+
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_ae8a1c60fedb40d44a86ba5c2e50e1262}\label{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_ae8a1c60fedb40d44a86ba5c2e50e1262}} 
+double {\bfseries X\+\_\+\+Min}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_a7a2f2b189d722ef15e7f3195f7f61025}\label{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_a7a2f2b189d722ef15e7f3195f7f61025}} 
+double {\bfseries X\+\_\+\+Max}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_a11b1787db4fb8c5224d460234fcc09a6}\label{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_a11b1787db4fb8c5224d460234fcc09a6}} 
+double {\bfseries Y\+\_\+\+Min}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_aeb3122cf0e560ee8139a3f7a635ce32e}\label{class_c_s_i_1_1_library_1_1_math_utilities_1_1_statistics_engine_aeb3122cf0e560ee8139a3f7a635ce32e}} 
+double {\bfseries Y\+\_\+\+Max}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Iterative Curve-\/fit for Y= slope$\ast$\+X+ Y0 Calculates slope, Y-\/intercept, and offset (of the form Y = slope$\ast$(X-\/\+X0) + Y0) Also, calculates Standard Deviation for X, Y, and r$^\wedge$2 (test for fit) 
+
+Usage\+: 1) Use Init\+LR(..) to reset 2) Update\+L\+R( x, y) to input (update) new values. 3) Use Read\+R2() to check \char`\"{}goodness of fit\char`\"{} 4) Read required curve-\/fit parameters
+
+Linear Curve-\/fit\+: y(i) = slope$\ast$x(i) + Y\+\_\+intercept Note\+: If Xoffset is set, y(i) = slope( x(i)+Xoffset ) + Y\+\_\+intercept
+
+Xoffset can be used to offset X\+\_\+value, if required. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Statistics.\+cs\end{DoxyCompactItemize}

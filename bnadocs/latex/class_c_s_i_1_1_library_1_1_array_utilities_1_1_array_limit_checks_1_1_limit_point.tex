@@ -1,0 +1,192 @@
+\hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{}\section{C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point Class Reference}
+\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+
+
+Used to represent a single point of a limit line  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a6a7bedf82a8e1015308acc9afb835512}{Limit\+Point}} (double limit, bool limit\+Is\+Inclusive, double range\+Value, bool end\+Line=false)
+\begin{DoxyCompactList}\small\item\em Used to represent a single point of a limit line \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a1bca78d7a3bc3ebe4a4fdcecb97f6ef9}{Limit\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Parameterless constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a9928348718632fa0f2a5f94d02f4171e}{Equals}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}})
+\item 
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_aefcfb1f9c945b02c6f9e1186e7f42546}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_aefcfb1f9c945b02c6f9e1186e7f42546}} 
+override bool {\bfseries Equals} (object obj)
+\item 
+override int \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5ad861288e1ad6b8c772dd022e8fb48b}{Get\+Hash\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a81b0681d6e544eaa37b7d08857b568f1}{operator==}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} a, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} b)
+\begin{DoxyCompactList}\small\item\em Compares all members for value equality. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_afb6b7605ba69f3a6f9f8c3547f026b60}{operator !=}} (\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} a, \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}} b)
+\begin{DoxyCompactList}\small\item\em Compares all members for value equality and negates the result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a10dca35d12bbec7356f7861eb952c46b}{Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The limit value corresponding to the specified range value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_aeda976e335b30a4488970cb159f55d8d}{Limit\+Is\+Inclusive}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When true, equals will not cause failure. Inclusivity of a limit point which is linearly interpolated will be determined by the inclusivity setting of the start point of that line. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5a8d729144fd21c67fed5f1f842588c0}{Range\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The range value corresponding to the specified limit value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a54f1aa045febf7425660b0e4ad79d2d0}{End\+Line}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When this is true, any points between this point\textquotesingle{}s Range\+Value and the next point\textquotesingle{}s Range\+Value will not be tested against limits (= don\textquotesingle{}t care), when false, this point will be connected with a limit line to the next point. The don\textquotesingle{}t care values will have value Double.\+Min\+Value for low limit list values, and Double.\+Max\+Value for high limit list values \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to represent a single point of a limit line 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a6a7bedf82a8e1015308acc9afb835512}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a6a7bedf82a8e1015308acc9afb835512}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!LimitPoint@{LimitPoint}}
+\index{LimitPoint@{LimitPoint}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{LimitPoint()}{LimitPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Limit\+Point (\begin{DoxyParamCaption}\item[{double}]{limit,  }\item[{bool}]{limit\+Is\+Inclusive,  }\item[{double}]{range\+Value,  }\item[{bool}]{end\+Line = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to represent a single point of a limit line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & The limit value corresponding to the specified range value.\\
+\hline
+{\em limit\+Is\+Inclusive} & when true, equals will not cause failure\\
+\hline
+{\em range\+Value} & The range value corresponding to the specified limit value.\\
+\hline
+{\em end\+Line} & When this is true, any points between this point\textquotesingle{}s Range\+Value and the next point\textquotesingle{}s Range\+Value will not be tested against limits (= don\textquotesingle{}t care), when false, this point will be connected with a limit line to the next point. The don\textquotesingle{}t care values will have value Double.\+Min\+Value for low limit list values, and Double.\+Max\+Value for high limit list values\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a1bca78d7a3bc3ebe4a4fdcecb97f6ef9}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a1bca78d7a3bc3ebe4a4fdcecb97f6ef9}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!LimitPoint@{LimitPoint}}
+\index{LimitPoint@{LimitPoint}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{LimitPoint()}{LimitPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Limit\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterless constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a9928348718632fa0f2a5f94d02f4171e}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a9928348718632fa0f2a5f94d02f4171e}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!Equals@{Equals}}
+\index{Equals@{Equals}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}}}]{Limit\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+summary$>$ Override equals to compare all members individually. /summary$>$ param name=\char`\"{}obj\char`\"{}$>$
+
+returns$>$\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5ad861288e1ad6b8c772dd022e8fb48b}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5ad861288e1ad6b8c772dd022e8fb48b}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_afb6b7605ba69f3a6f9f8c3547f026b60}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_afb6b7605ba69f3a6f9f8c3547f026b60}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+operator != (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}}}]{a,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares all members for value equality and negates the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+summary$>$ Compares all members for value equality. Provided this type-\/specific Equals for performance. /summary$>$ param name=\char`\"{}\+Limit\+Point\char`\"{}$>$
+
+returns$>$\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a81b0681d6e544eaa37b7d08857b568f1}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a81b0681d6e544eaa37b7d08857b568f1}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!operator==@{operator==}}
+\index{operator==@{operator==}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}}}]{a,  }\item[{\mbox{\hyperlink{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point}{Limit\+Point}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares all members for value equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a54f1aa045febf7425660b0e4ad79d2d0}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a54f1aa045febf7425660b0e4ad79d2d0}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!EndLine@{EndLine}}
+\index{EndLine@{EndLine}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{EndLine}{EndLine}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+End\+Line\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When this is true, any points between this point\textquotesingle{}s Range\+Value and the next point\textquotesingle{}s Range\+Value will not be tested against limits (= don\textquotesingle{}t care), when false, this point will be connected with a limit line to the next point. The don\textquotesingle{}t care values will have value Double.\+Min\+Value for low limit list values, and Double.\+Max\+Value for high limit list values 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a10dca35d12bbec7356f7861eb952c46b}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a10dca35d12bbec7356f7861eb952c46b}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!Limit@{Limit}}
+\index{Limit@{Limit}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{Limit}{Limit}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Limit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The limit value corresponding to the specified range value. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_aeda976e335b30a4488970cb159f55d8d}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_aeda976e335b30a4488970cb159f55d8d}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!LimitIsInclusive@{LimitIsInclusive}}
+\index{LimitIsInclusive@{LimitIsInclusive}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{LimitIsInclusive}{LimitIsInclusive}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Limit\+Is\+Inclusive\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When true, equals will not cause failure. Inclusivity of a limit point which is linearly interpolated will be determined by the inclusivity setting of the start point of that line. 
+
+\mbox{\Hypertarget{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5a8d729144fd21c67fed5f1f842588c0}\label{class_c_s_i_1_1_library_1_1_array_utilities_1_1_array_limit_checks_1_1_limit_point_a5a8d729144fd21c67fed5f1f842588c0}} 
+\index{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}!RangeValue@{RangeValue}}
+\index{RangeValue@{RangeValue}!CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint@{CSI.Library.ArrayUtilities.ArrayLimitChecks.LimitPoint}}
+\subsubsection{\texorpdfstring{RangeValue}{RangeValue}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Array\+Utilities.\+Array\+Limit\+Checks.\+Limit\+Point.\+Range\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The range value corresponding to the specified limit value. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Array\+Limit\+Checks.\+cs\end{DoxyCompactItemize}

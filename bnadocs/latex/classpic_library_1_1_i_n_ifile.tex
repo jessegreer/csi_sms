@@ -1,0 +1,259 @@
+\hypertarget{classpic_library_1_1_i_n_ifile}{}\section{pic\+Library.\+I\+N\+Ifile Class Reference}
+\label{classpic_library_1_1_i_n_ifile}\index{picLibrary.INIfile@{picLibrary.INIfile}}
+
+
+A class for reading values by section and key from a standard \char`\"{}.\+ini\char`\"{} initialization file.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a6ac876cf9139c7962dff6454d4f849ec}{I\+N\+Ifile}} (string file, System.\+Windows.\+Forms.\+Rich\+Text\+Box Text\+Box\+Setup\+File, string comment\+Delimiter=\char`\"{};\char`\"{})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Ini\+File class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpic_library_1_1_i_n_ifile_ae837a0427f22852092de502c0871b711}{I\+N\+Ifile}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Ini\+File class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a3af503f215c3c270458847c7f6733da5}{Get\+Value}} (string section, string key, string default\+Value=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets a string value by section and key. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a42c91c015717857efebbe40bf3a8f8d8}{Get\+Integer}} (string section, string key, int default\+Value=0, int min\+Value=int.\+Min\+Value, int max\+Value=int.\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Gets an integer value by section and key. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_ae18550990a9197dcc8e9dbe2b6f87e40}{Get\+Double}} (string section, string key, double default\+Value=0, double min\+Value=double.\+Min\+Value, double max\+Value=double.\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Gets a double floating-\/point value by section and key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_acec60d423b48f84c12b0e07259a00549}{Get\+Boolean}} (string section, string key, bool default\+Value=false)
+\begin{DoxyCompactList}\small\item\em Gets a boolean value by section and key. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a841f8111aed3cef3de338c393d8e0ee5}{Get\+All\+Values}} (string section, string key)
+\begin{DoxyCompactList}\small\item\em Gets an array of string values by section and key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a9e3a9f435c8cacebcd9ccab92bd66457}{Comment\+Delimiter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The comment delimiter string (default value is \char`\"{};\char`\"{}). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a2fbe7b6c7423b9740f6ec3747a2eecf1}{The\+File}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The initialization file path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a9d4528ac108889e3f86d53b05c6ce8ff}\label{classpic_library_1_1_i_n_ifile_a9d4528ac108889e3f86d53b05c6ce8ff}} 
+string {\bfseries raboga\+The\+File}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_aec4861d4b2069527b6ac5da73e142a87}{this\mbox{[}string section, string key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a string value by section and key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for reading values by section and key from a standard \char`\"{}.\+ini\char`\"{} initialization file. 
+
+Section and key names are not case-\/sensitive. Values are loaded into a hash table for fast access. Use \mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a841f8111aed3cef3de338c393d8e0ee5}{Get\+All\+Values}} to read multiple values that share the same section and key. Sections in the initialization file must have the following form\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{; comment line}
+\DoxyCodeLine{[section]}
+\DoxyCodeLine{key=value}
+\end{DoxyCode}
+ Examples\+: var ini\+File = new Ini\+File(\char`\"{}\+My\+File.\+ini\char`\"{}); string font = ini\+File.\+Get\+Value(\char`\"{}\+Text Style\char`\"{}, \char`\"{}\+Font\char`\"{}, \char`\"{}\+Arial\char`\"{}); int size = ini\+File.\+Get\+Integer(\char`\"{}\+Text Style\char`\"{}, \char`\"{}\+Size\char`\"{}, 12); bool bold = ini\+File.\+Get\+Boolean(\char`\"{}\+Text Style\char`\"{}, \char`\"{}\+Bold\char`\"{}, false);
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a6ac876cf9139c7962dff6454d4f849ec}\label{classpic_library_1_1_i_n_ifile_a6ac876cf9139c7962dff6454d4f849ec}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!INIfile@{INIfile}}
+\index{INIfile@{INIfile}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{INIfile()}{INIfile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pic\+Library.\+I\+N\+Ifile.\+I\+N\+Ifile (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{System.\+Windows.\+Forms.\+Rich\+Text\+Box}]{Text\+Box\+Setup\+File,  }\item[{string}]{comment\+Delimiter = {\ttfamily \char`\"{};\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the Ini\+File class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The initialization file path.\\
+\hline
+{\em comment\+Delimiter} & The comment delimiter string (default value is \char`\"{};\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_ae837a0427f22852092de502c0871b711}\label{classpic_library_1_1_i_n_ifile_ae837a0427f22852092de502c0871b711}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!INIfile@{INIfile}}
+\index{INIfile@{INIfile}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{INIfile()}{INIfile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pic\+Library.\+I\+N\+Ifile.\+I\+N\+Ifile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the Ini\+File class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a841f8111aed3cef3de338c393d8e0ee5}\label{classpic_library_1_1_i_n_ifile_a841f8111aed3cef3de338c393d8e0ee5}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!GetAllValues@{GetAllValues}}
+\index{GetAllValues@{GetAllValues}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{GetAllValues()}{GetAllValues()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} pic\+Library.\+I\+N\+Ifile.\+Get\+All\+Values (\begin{DoxyParamCaption}\item[{string}]{section,  }\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets an array of string values by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The array of values, or null if none found.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a3af503f215c3c270458847c7f6733da5}{Get\+Value}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_acec60d423b48f84c12b0e07259a00549}\label{classpic_library_1_1_i_n_ifile_acec60d423b48f84c12b0e07259a00549}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!GetBoolean@{GetBoolean}}
+\index{GetBoolean@{GetBoolean}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{GetBoolean()}{GetBoolean()}}
+{\footnotesize\ttfamily bool pic\+Library.\+I\+N\+Ifile.\+Get\+Boolean (\begin{DoxyParamCaption}\item[{string}]{section,  }\item[{string}]{key,  }\item[{bool}]{default\+Value = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a boolean value by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+{\em default\+Value} & The default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_ae18550990a9197dcc8e9dbe2b6f87e40}\label{classpic_library_1_1_i_n_ifile_ae18550990a9197dcc8e9dbe2b6f87e40}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!GetDouble@{GetDouble}}
+\index{GetDouble@{GetDouble}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{GetDouble()}{GetDouble()}}
+{\footnotesize\ttfamily double pic\+Library.\+I\+N\+Ifile.\+Get\+Double (\begin{DoxyParamCaption}\item[{string}]{section,  }\item[{string}]{key,  }\item[{double}]{default\+Value = {\ttfamily 0},  }\item[{double}]{min\+Value = {\ttfamily double.MinValue},  }\item[{double}]{max\+Value = {\ttfamily double.MaxValue} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a double floating-\/point value by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+{\em default\+Value} & The default value.\\
+\hline
+{\em min\+Value} & Optional minimum value to be enforced.\\
+\hline
+{\em max\+Value} & Optional maximum value to be enforced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a42c91c015717857efebbe40bf3a8f8d8}\label{classpic_library_1_1_i_n_ifile_a42c91c015717857efebbe40bf3a8f8d8}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!GetInteger@{GetInteger}}
+\index{GetInteger@{GetInteger}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{GetInteger()}{GetInteger()}}
+{\footnotesize\ttfamily int pic\+Library.\+I\+N\+Ifile.\+Get\+Integer (\begin{DoxyParamCaption}\item[{string}]{section,  }\item[{string}]{key,  }\item[{int}]{default\+Value = {\ttfamily 0},  }\item[{int}]{min\+Value = {\ttfamily int.MinValue},  }\item[{int}]{max\+Value = {\ttfamily int.MaxValue} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets an integer value by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+{\em default\+Value} & The default value.\\
+\hline
+{\em min\+Value} & Optional minimum value to be enforced.\\
+\hline
+{\em max\+Value} & Optional maximum value to be enforced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a3af503f215c3c270458847c7f6733da5}\label{classpic_library_1_1_i_n_ifile_a3af503f215c3c270458847c7f6733da5}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily string pic\+Library.\+I\+N\+Ifile.\+Get\+Value (\begin{DoxyParamCaption}\item[{string}]{section,  }\item[{string}]{key,  }\item[{string}]{default\+Value = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a string value by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+{\em default\+Value} & The default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a841f8111aed3cef3de338c393d8e0ee5}{Get\+All\+Values}}
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a9e3a9f435c8cacebcd9ccab92bd66457}\label{classpic_library_1_1_i_n_ifile_a9e3a9f435c8cacebcd9ccab92bd66457}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!CommentDelimiter@{CommentDelimiter}}
+\index{CommentDelimiter@{CommentDelimiter}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{CommentDelimiter}{CommentDelimiter}}
+{\footnotesize\ttfamily string pic\+Library.\+I\+N\+Ifile.\+Comment\+Delimiter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The comment delimiter string (default value is \char`\"{};\char`\"{}). 
+
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_a2fbe7b6c7423b9740f6ec3747a2eecf1}\label{classpic_library_1_1_i_n_ifile_a2fbe7b6c7423b9740f6ec3747a2eecf1}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!TheFile@{TheFile}}
+\index{TheFile@{TheFile}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{TheFile}{TheFile}}
+{\footnotesize\ttfamily string pic\+Library.\+I\+N\+Ifile.\+The\+File\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The initialization file path. 
+
+\mbox{\Hypertarget{classpic_library_1_1_i_n_ifile_aec4861d4b2069527b6ac5da73e142a87}\label{classpic_library_1_1_i_n_ifile_aec4861d4b2069527b6ac5da73e142a87}} 
+\index{picLibrary.INIfile@{picLibrary.INIfile}!this\mbox{[}string section, string key\mbox{]}@{this[string section, string key]}}
+\index{this\mbox{[}string section, string key\mbox{]}@{this[string section, string key]}!picLibrary.INIfile@{picLibrary.INIfile}}
+\subsubsection{\texorpdfstring{this[string section, string key]}{this[string section, string key]}}
+{\footnotesize\ttfamily string pic\+Library.\+I\+N\+Ifile.\+this\mbox{[}string section, string key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a string value by section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section.\\
+\hline
+{\em key} & The key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classpic_library_1_1_i_n_ifile_a3af503f215c3c270458847c7f6733da5}{Get\+Value}}
+
+
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/I\+N\+Ifile.\+cs\end{DoxyCompactItemize}

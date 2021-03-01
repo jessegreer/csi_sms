@@ -1,0 +1,140 @@
+\hypertarget{class_b_n_a30_1_1_b_nplus_master_slave}{}\section{B\+N\+A30.\+B\+Nplus\+Master\+Slave Class Reference}
+\label{class_b_n_a30_1_1_b_nplus_master_slave}\index{BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_b_nplus_master_slave_1_1_t_u_int16}{T\+U\+Int16}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a5286a107da294e0dca0644bb377c28b5}\label{class_b_n_a30_1_1_b_nplus_master_slave_a5286a107da294e0dca0644bb377c28b5}} 
+enum {\bfseries Analysis\+Type} \{ {\bfseries Raw}, 
+{\bfseries Parse}, 
+{\bfseries Anal0}, 
+{\bfseries Anal1}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_af278230aef246c4304a62dba36813c7d}\label{class_b_n_a30_1_1_b_nplus_master_slave_af278230aef246c4304a62dba36813c7d}} 
+{\bfseries B\+Nplus\+Master\+Slave} (int Initsetupflag, string com\+Port, string baud\+Rate, string this\+Address)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a9945871578c59d1379d80ae73dabfec9}\label{class_b_n_a30_1_1_b_nplus_master_slave_a9945871578c59d1379d80ae73dabfec9}} 
+string {\bfseries Get\+Data\+String} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a550b2bebbab60601f049c9d209f8b5e9}\label{class_b_n_a30_1_1_b_nplus_master_slave_a550b2bebbab60601f049c9d209f8b5e9}} 
+void {\bfseries set\+Analysis\+Type} (Analysis\+Type e)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a3d1501e0638b3c805f9d48fd685c2e80}\label{class_b_n_a30_1_1_b_nplus_master_slave_a3d1501e0638b3c805f9d48fd685c2e80}} 
+string {\bfseries Read\+Buffer\+String} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_add46e7dfa7c7e1c18454edbbed060b9e}\label{class_b_n_a30_1_1_b_nplus_master_slave_add46e7dfa7c7e1c18454edbbed060b9e}} 
+double {\bfseries Get\+Millisecs\+Since1970} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_ac759bb009a2e318bae5850cc188b06a9}\label{class_b_n_a30_1_1_b_nplus_master_slave_ac759bb009a2e318bae5850cc188b06a9}} 
+byte {\bfseries set\+\_\+bit} (byte inbyte, byte bit\+Position, byte set\+To)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_af744d2c0a6d634d227990ae37cfd9a0a}\label{class_b_n_a30_1_1_b_nplus_master_slave_af744d2c0a6d634d227990ae37cfd9a0a}} 
+U\+Int16 {\bfseries Modbus\+C\+RC} (byte\mbox{[}$\,$\mbox{]} msg, U\+Int16 len)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a1ee63e6740f6b46a54ea02a953b5f6b1}\label{class_b_n_a30_1_1_b_nplus_master_slave_a1ee63e6740f6b46a54ea02a953b5f6b1}} 
+int {\bfseries Update} (byte inchar)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a1ad0efc92f00cadc24ea6e1e709d2673}\label{class_b_n_a30_1_1_b_nplus_master_slave_a1ad0efc92f00cadc24ea6e1e709d2673}} 
+string {\bfseries Get\+Parsed\+Desription} ()
+\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_b_nplus_master_slave_aee1ab8ce47fbe22ba6a7fe6da4c31358}{Prefix\+Text\+To\+File}} (string text, string full\+File\+Path)
+\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_b_nplus_master_slave_a8192fedb382985fa67387f75f164f41c}{Append\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_b_nplus_master_slave_a3cc9dd0ae5ab6c54e9d0d361be1bad8e}{Write\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a5f45c393fce96881eeba4dc2e1985a4f}\label{class_b_n_a30_1_1_b_nplus_master_slave_a5f45c393fce96881eeba4dc2e1985a4f}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}} {\bfseries B\+Npack} = new \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}}()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_aa8acb85ebb8e874d21729ec98e1e4c69}\label{class_b_n_a30_1_1_b_nplus_master_slave_aa8acb85ebb8e874d21729ec98e1e4c69}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries B\+Ntest\+Poll} = \{ 0x\+A1,0x\+A2,0x00,0x00,0x01,0x00,0x02,0x00,0x02,0x01,0x00,0x56,0x00,0x08,0x20,0x00,0x01,0x01,0x00,0x01,0x00,0x0\+A,0x\+A4,0x\+F\+C \}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_acd5cc959c8f592e0527c648c88102c2d}\label{class_b_n_a30_1_1_b_nplus_master_slave_acd5cc959c8f592e0527c648c88102c2d}} 
+bool {\bfseries Rec\+Ready\+To\+Send}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a943122950452babce7d1aa62e10a8622}\label{class_b_n_a30_1_1_b_nplus_master_slave_a943122950452babce7d1aa62e10a8622}} 
+U\+Int16 {\bfseries Mstate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a8192fedb382985fa67387f75f164f41c}\label{class_b_n_a30_1_1_b_nplus_master_slave_a8192fedb382985fa67387f75f164f41c}} 
+\index{BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}!AppendTextToFile@{AppendTextToFile}}
+\index{AppendTextToFile@{AppendTextToFile}!BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}}
+\subsubsection{\texorpdfstring{AppendTextToFile()}{AppendTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+B\+Nplus\+Master\+Slave.\+Append\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_aee1ab8ce47fbe22ba6a7fe6da4c31358}\label{class_b_n_a30_1_1_b_nplus_master_slave_aee1ab8ce47fbe22ba6a7fe6da4c31358}} 
+\index{BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}!PrefixTextToFile@{PrefixTextToFile}}
+\index{PrefixTextToFile@{PrefixTextToFile}!BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}}
+\subsubsection{\texorpdfstring{PrefixTextToFile()}{PrefixTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+B\+Nplus\+Master\+Slave.\+Prefix\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+Opens a file, prefixes the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to prefix to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_b_nplus_master_slave_a3cc9dd0ae5ab6c54e9d0d361be1bad8e}\label{class_b_n_a30_1_1_b_nplus_master_slave_a3cc9dd0ae5ab6c54e9d0d361be1bad8e}} 
+\index{BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}!WriteTextToFile@{WriteTextToFile}}
+\index{WriteTextToFile@{WriteTextToFile}!BNA30.BNplusMasterSlave@{BNA30.BNplusMasterSlave}}
+\subsubsection{\texorpdfstring{WriteTextToFile()}{WriteTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+B\+Nplus\+Master\+Slave.\+Write\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & Full file path for writing text including file name\\
+\hline
+{\em error\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/c\+B\+Nplus\+Master\+Slave.\+cs\end{DoxyCompactItemize}

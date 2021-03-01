@@ -1,0 +1,465 @@
+\hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{}\section{C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point Struct Reference}
+\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+
+
+Stores an x and y value of type double.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6dfa8a9bec686c68b99eb0cfd48edf81}{X\+Y\+\_\+\+Point}} (double x\+\_\+\+Value=double.\+Min\+Value, double y\+\_\+\+Value=double.\+Min\+Value, bool excluded=false)
+\item 
+override string \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a01859cb5642dd98cb6bdc44b71d929ce}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string with the following format\+: ( X\+\_\+\+Value, Y\+\_\+\+Value ), optionally followed by \char`\"{} E\+X\+C\+L\+U\+D\+E\+D\char`\"{} if this instance\textquotesingle{}s Excluded field is set to true. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ace282e3b909ff95bb8376516f05fff81}{Equals}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} xy\+\_\+\+Point)
+\item 
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a57e298b54de7c3e4592726d5c6e9b92f}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a57e298b54de7c3e4592726d5c6e9b92f}} 
+override bool {\bfseries Equals} (object obj)
+\item 
+override int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a4045c0fed4429382dcec3835b3ff626c}{Get\+Hash\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a5812c346cf3e51b228bb8b8a99837ba6}{Get\+\_\+\+X\+\_\+\+Value}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} point)
+\begin{DoxyCompactList}\small\item\em Returns the X\+\_\+\+Value of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a9c0d06c62ece74ed392968218f77e54a}{Get\+\_\+\+Y\+\_\+\+Value}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} point)
+\begin{DoxyCompactList}\small\item\em Returns the X\+\_\+\+Value of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6d68dc560610ff388fbde1de0c747e0b}{Copy}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} point)
+\begin{DoxyCompactList}\small\item\em Returns a separate copy of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aa652cf461ef44d8813fee1b3e797b81c}{Multiply\+Scalar}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+1, double scalar\+\_\+\+X\+\_\+\+Value=1.\+0, double scalar\+\_\+\+Y\+\_\+\+Value=1.\+0)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where X\+\_\+\+Value contains the product of each original X\+\_\+\+Value multiplied by the scalar\+\_\+\+X\+\_\+\+Value and Y\+\_\+\+Value contains the product of each original Y\+\_\+\+Value multiplied by the scalar\+\_\+\+Y\+\_\+\+Value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a2609124ccfc07722332384911c13bad9}{Add\+Scalar}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+1, double scalar\+\_\+\+X\+\_\+\+Value=1.\+0, double scalar\+\_\+\+Y\+\_\+\+Value=1.\+0)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where X\+\_\+\+Value contains the sum of each original X\+\_\+\+Value added to the scalar\+\_\+\+X\+\_\+\+Value and Y\+\_\+\+Value contains the sum of each original Y\+\_\+\+Value added to the scalar\+\_\+\+Y\+\_\+\+Value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab302194d8398608888249acc07a0b749}{Multiply\+\_\+\+X\+Y\+\_\+\+Points\+\_\+\+Y\+\_\+\+Values}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+1, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where the X\+\_\+\+Value is equal to the X\+\_\+\+Value of operand\+\_\+1, and the Y\+\_\+\+Value is equal to the product of operand\+\_\+1.\+Y\+\_\+\+Value and operand\+\_\+2.\+Y\+\_\+\+Value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a64aacee12f90dd3b9653de9d677cc6c0}{Sum\+\_\+\+X\+Y\+\_\+\+Points\+\_\+\+Y\+\_\+\+Values}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+1, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} operand\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where the X\+\_\+\+Value is equal to the X\+\_\+\+Value of operand\+\_\+1, and the Y\+\_\+\+Value is equal to the sum of operand\+\_\+1.\+Y\+\_\+\+Value and operand\+\_\+2.\+Y\+\_\+\+Value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_adae695175aa2738a5e0b4e06cc010caf}{Midpoint}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} point\+\_\+A, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} point\+\_\+B)
+\begin{DoxyCompactList}\small\item\em Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} representing the midpoint of point\+\_\+A and point\+\_\+B. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_abc78d9c8ed6eab0d191d51613010aa13}{operator -\/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} b)
+\begin{DoxyCompactList}\small\item\em Subtracts the x and y values respectively of point b from point a. If either original point is excluded, the result will be excluded. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab6b36557c1c1ae436ca04c0522ab850b}{Ascending\+\_\+\+Y\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} left, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of ascending Y\+\_\+\+Value. When there is more than one item with the same Y\+\_\+\+Value, those items will be sorted by ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_af8c1207e1a624367f6cf1c7ad0b28786}{Descending\+\_\+\+Y\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} left, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of descending Y\+\_\+\+Value. When there is more than one item with the same Y\+\_\+\+Value, those items will be sorted by ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a862f6f8db7dff3de77166a4061bb8724}{Ascending\+\_\+\+X\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} left, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ac51d0348e69f3cbe10d2fec50ab3d271}{Descending\+\_\+\+X\+\_\+\+Values\+Comparer}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} left, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} right)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a31035324cc5360f8e897224137a60302}{operator==}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} b)
+\begin{DoxyCompactList}\small\item\em Compares all members for value equality. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a3edf55b3b46e4f54e257efdb6821176c}{operator !=}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} b)
+\begin{DoxyCompactList}\small\item\em Compares all members for value equality and negates the result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a1fe70fe10cfee9839b032e5e8ed5a89b}{X\+\_\+\+Value}}
+\begin{DoxyCompactList}\small\item\em The X\+\_\+\+Value \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aea9cfab5f9b44a28e22dd88bc4e1bc7f}{Y\+\_\+\+Value}}
+\begin{DoxyCompactList}\small\item\em The Y\+\_\+\+Value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ad68cafc4f9fbf764346eb821d885e9fe}{Excluded}}
+\begin{DoxyCompactList}\small\item\em When true, algorithms will regard this point as if it didn\textquotesingle{}t exist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores an x and y value of type double. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6dfa8a9bec686c68b99eb0cfd48edf81}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6dfa8a9bec686c68b99eb0cfd48edf81}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!XY\_Point@{XY\_Point}}
+\index{XY\_Point@{XY\_Point}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{XY\_Point()}{XY\_Point()}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+X\+Y\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double}]{x\+\_\+\+Value = {\ttfamily double.MinValue},  }\item[{double}]{y\+\_\+\+Value = {\ttfamily double.MinValue},  }\item[{bool}]{excluded = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+\+Value} & \\
+\hline
+{\em y\+\_\+\+Value} & \\
+\hline
+{\em excluded} & When true, algorithms will regard this point as if it didn\textquotesingle{}t exist or user-\/defined.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a2609124ccfc07722332384911c13bad9}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a2609124ccfc07722332384911c13bad9}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!AddScalar@{AddScalar}}
+\index{AddScalar@{AddScalar}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{AddScalar()}{AddScalar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Add\+Scalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+1,  }\item[{double}]{scalar\+\_\+\+X\+\_\+\+Value = {\ttfamily 1.0},  }\item[{double}]{scalar\+\_\+\+Y\+\_\+\+Value = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where X\+\_\+\+Value contains the sum of each original X\+\_\+\+Value added to the scalar\+\_\+\+X\+\_\+\+Value and Y\+\_\+\+Value contains the sum of each original Y\+\_\+\+Value added to the scalar\+\_\+\+Y\+\_\+\+Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand\+\_\+1} & \\
+\hline
+{\em scalar\+\_\+\+X\+\_\+\+Value} & \\
+\hline
+{\em scalar\+\_\+\+Y\+\_\+\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a862f6f8db7dff3de77166a4061bb8724}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a862f6f8db7dff3de77166a4061bb8724}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Ascending\_X\_ValuesComparer@{Ascending\_X\_ValuesComparer}}
+\index{Ascending\_X\_ValuesComparer@{Ascending\_X\_ValuesComparer}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Ascending\_X\_ValuesComparer()}{Ascending\_X\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+X\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{left,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab6b36557c1c1ae436ca04c0522ab850b}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab6b36557c1c1ae436ca04c0522ab850b}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Ascending\_Y\_ValuesComparer@{Ascending\_Y\_ValuesComparer}}
+\index{Ascending\_Y\_ValuesComparer@{Ascending\_Y\_ValuesComparer}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Ascending\_Y\_ValuesComparer()}{Ascending\_Y\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{left,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of ascending Y\+\_\+\+Value. When there is more than one item with the same Y\+\_\+\+Value, those items will be sorted by ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6d68dc560610ff388fbde1de0c747e0b}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a6d68dc560610ff388fbde1de0c747e0b}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Copy@{Copy}}
+\index{Copy@{Copy}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a separate copy of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ac51d0348e69f3cbe10d2fec50ab3d271}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ac51d0348e69f3cbe10d2fec50ab3d271}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Descending\_X\_ValuesComparer@{Descending\_X\_ValuesComparer}}
+\index{Descending\_X\_ValuesComparer@{Descending\_X\_ValuesComparer}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Descending\_X\_ValuesComparer()}{Descending\_X\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Descending\+\_\+\+X\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{left,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of descending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_af8c1207e1a624367f6cf1c7ad0b28786}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_af8c1207e1a624367f6cf1c7ad0b28786}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Descending\_Y\_ValuesComparer@{Descending\_Y\_ValuesComparer}}
+\index{Descending\_Y\_ValuesComparer@{Descending\_Y\_ValuesComparer}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Descending\_Y\_ValuesComparer()}{Descending\_Y\_ValuesComparer()}}
+{\footnotesize\ttfamily static int C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Descending\+\_\+\+Y\+\_\+\+Values\+Comparer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{left,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares two \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} instances in such a way as to produce a sort result of descending Y\+\_\+\+Value. When there is more than one item with the same Y\+\_\+\+Value, those items will be sorted by ascending X\+\_\+\+Value. Can pass just the name of the name of this method (i.\+e. X\+Y\+\_\+\+Point.\+Ascending\+\_\+\+Y\+\_\+\+Values\+\_\+\+Comparer) to fill a method parameter of type System.\+Collections.\+I\+Comparer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & \\
+\hline
+{\em right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ace282e3b909ff95bb8376516f05fff81}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ace282e3b909ff95bb8376516f05fff81}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Equals@{Equals}}
+\index{Equals@{Equals}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{xy\+\_\+\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+summary$>$ Override equals to compare all members individually. /summary$>$ param name=\char`\"{}obj\char`\"{}$>$
+
+returns$>$\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a5812c346cf3e51b228bb8b8a99837ba6}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a5812c346cf3e51b228bb8b8a99837ba6}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Get\_X\_Value@{Get\_X\_Value}}
+\index{Get\_X\_Value@{Get\_X\_Value}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Get\_X\_Value()}{Get\_X\_Value()}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Get\+\_\+\+X\+\_\+\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the X\+\_\+\+Value of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a9c0d06c62ece74ed392968218f77e54a}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a9c0d06c62ece74ed392968218f77e54a}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Get\_Y\_Value@{Get\_Y\_Value}}
+\index{Get\_Y\_Value@{Get\_Y\_Value}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Get\_Y\_Value()}{Get\_Y\_Value()}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Get\+\_\+\+Y\+\_\+\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the X\+\_\+\+Value of the specified \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a4045c0fed4429382dcec3835b3ff626c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a4045c0fed4429382dcec3835b3ff626c}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override Get\+Hash\+Code, because the base Get\+Hash\+Code was not including all of the values (module, group, and ID) in the hash and thus was returning the same hash code for different values. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_adae695175aa2738a5e0b4e06cc010caf}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_adae695175aa2738a5e0b4e06cc010caf}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Midpoint@{Midpoint}}
+\index{Midpoint@{Midpoint}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Midpoint()}{Midpoint()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Midpoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{point\+\_\+A,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{point\+\_\+B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} representing the midpoint of point\+\_\+A and point\+\_\+B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+A} & \\
+\hline
+{\em point\+\_\+B} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab302194d8398608888249acc07a0b749}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ab302194d8398608888249acc07a0b749}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Multiply\_XY\_Points\_Y\_Values@{Multiply\_XY\_Points\_Y\_Values}}
+\index{Multiply\_XY\_Points\_Y\_Values@{Multiply\_XY\_Points\_Y\_Values}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Multiply\_XY\_Points\_Y\_Values()}{Multiply\_XY\_Points\_Y\_Values()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Multiply\+\_\+\+X\+Y\+\_\+\+Points\+\_\+\+Y\+\_\+\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+1,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where the X\+\_\+\+Value is equal to the X\+\_\+\+Value of operand\+\_\+1, and the Y\+\_\+\+Value is equal to the product of operand\+\_\+1.\+Y\+\_\+\+Value and operand\+\_\+2.\+Y\+\_\+\+Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand\+\_\+1} & \\
+\hline
+{\em operand\+\_\+2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aa652cf461ef44d8813fee1b3e797b81c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aa652cf461ef44d8813fee1b3e797b81c}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!MultiplyScalar@{MultiplyScalar}}
+\index{MultiplyScalar@{MultiplyScalar}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{MultiplyScalar()}{MultiplyScalar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Multiply\+Scalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+1,  }\item[{double}]{scalar\+\_\+\+X\+\_\+\+Value = {\ttfamily 1.0},  }\item[{double}]{scalar\+\_\+\+Y\+\_\+\+Value = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where X\+\_\+\+Value contains the product of each original X\+\_\+\+Value multiplied by the scalar\+\_\+\+X\+\_\+\+Value and Y\+\_\+\+Value contains the product of each original Y\+\_\+\+Value multiplied by the scalar\+\_\+\+Y\+\_\+\+Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand\+\_\+1} & \\
+\hline
+{\em scalar\+\_\+\+X\+\_\+\+Value} & \\
+\hline
+{\em scalar\+\_\+\+Y\+\_\+\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a3edf55b3b46e4f54e257efdb6821176c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a3edf55b3b46e4f54e257efdb6821176c}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+operator != (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares all members for value equality and negates the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+summary$>$ Compares all members for value equality. Provided this type-\/specific Equals for performance. /summary$>$ param name=\char`\"{}xy\+\_\+\+Point\char`\"{}$>$
+
+returns$>$\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_abc78d9c8ed6eab0d191d51613010aa13}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_abc78d9c8ed6eab0d191d51613010aa13}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Subtracts the x and y values respectively of point b from point a. If either original point is excluded, the result will be excluded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a31035324cc5360f8e897224137a60302}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a31035324cc5360f8e897224137a60302}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!operator==@{operator==}}
+\index{operator==@{operator==}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compares all members for value equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a64aacee12f90dd3b9653de9d677cc6c0}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a64aacee12f90dd3b9653de9d677cc6c0}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Sum\_XY\_Points\_Y\_Values@{Sum\_XY\_Points\_Y\_Values}}
+\index{Sum\_XY\_Points\_Y\_Values@{Sum\_XY\_Points\_Y\_Values}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Sum\_XY\_Points\_Y\_Values()}{Sum\_XY\_Points\_Y\_Values()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Sum\+\_\+\+X\+Y\+\_\+\+Points\+\_\+\+Y\+\_\+\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+1,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}}}]{operand\+\_\+2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a new \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point}{X\+Y\+\_\+\+Point}} where the X\+\_\+\+Value is equal to the X\+\_\+\+Value of operand\+\_\+1, and the Y\+\_\+\+Value is equal to the sum of operand\+\_\+1.\+Y\+\_\+\+Value and operand\+\_\+2.\+Y\+\_\+\+Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operand\+\_\+1} & \\
+\hline
+{\em operand\+\_\+2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a01859cb5642dd98cb6bdc44b71d929ce}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a01859cb5642dd98cb6bdc44b71d929ce}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!ToString@{ToString}}
+\index{ToString@{ToString}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a string with the following format\+: ( X\+\_\+\+Value, Y\+\_\+\+Value ), optionally followed by \char`\"{} E\+X\+C\+L\+U\+D\+E\+D\char`\"{} if this instance\textquotesingle{}s Excluded field is set to true. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ad68cafc4f9fbf764346eb821d885e9fe}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_ad68cafc4f9fbf764346eb821d885e9fe}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Excluded@{Excluded}}
+\index{Excluded@{Excluded}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Excluded}{Excluded}}
+{\footnotesize\ttfamily bool C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Excluded}
+
+
+
+When true, algorithms will regard this point as if it didn\textquotesingle{}t exist. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a1fe70fe10cfee9839b032e5e8ed5a89b}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_a1fe70fe10cfee9839b032e5e8ed5a89b}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!X\_Value@{X\_Value}}
+\index{X\_Value@{X\_Value}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{X\_Value}{X\_Value}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+X\+\_\+\+Value}
+
+
+
+The X\+\_\+\+Value 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aea9cfab5f9b44a28e22dd88bc4e1bc7f}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_x_y___point_aea9cfab5f9b44a28e22dd88bc4e1bc7f}} 
+\index{CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}!Y\_Value@{Y\_Value}}
+\index{Y\_Value@{Y\_Value}!CSI.Library.DataTypes.XY\_Point@{CSI.Library.DataTypes.XY\_Point}}
+\subsubsection{\texorpdfstring{Y\_Value}{Y\_Value}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+X\+Y\+\_\+\+Point.\+Y\+\_\+\+Value}
+
+
+
+The Y\+\_\+\+Value 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/X\+Y\+\_\+\+Point.\+cs\end{DoxyCompactItemize}

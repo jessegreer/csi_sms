@@ -1,0 +1,259 @@
+\hypertarget{class_b_n_a30_1_1_net_anal_b_n}{}\section{B\+N\+A30.\+Net\+Anal\+BN Class Reference}
+\label{class_b_n_a30_1_1_net_anal_b_n}\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1_ivalue_uint16}{Ivalue\+Uint16}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1packetdata}{packetdata}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1_t_float32}{T\+Float32}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1_t_float64}{T\+Float64}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1_t_int32}{T\+Int32}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_net_anal_b_n_1_1_t_u_int16}{T\+U\+Int16}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a8ba7f7941119d9d3fc4cfe9a2f8bbd8d}\label{class_b_n_a30_1_1_net_anal_b_n_a8ba7f7941119d9d3fc4cfe9a2f8bbd8d}} 
+enum {\bfseries Analysis\+Type} \{ {\bfseries Raw}, 
+{\bfseries Parse}, 
+{\bfseries Anal0}, 
+{\bfseries Anal1}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_ac6adbb50402e967e06dab2a9173374b1}\label{class_b_n_a30_1_1_net_anal_b_n_ac6adbb50402e967e06dab2a9173374b1}} 
+{\bfseries Net\+Anal\+BN} (int Initsetupflag)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_aeeb232114e65f89d4bdfb15da123a3c4}\label{class_b_n_a30_1_1_net_anal_b_n_aeeb232114e65f89d4bdfb15da123a3c4}} 
+string {\bfseries Get\+Data\+String} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_aae71ac4b5991560ef3682210ee1889e0}\label{class_b_n_a30_1_1_net_anal_b_n_aae71ac4b5991560ef3682210ee1889e0}} 
+int {\bfseries Get\+Buffer\+Size} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a17f1b22e9fb4b6006614025ad0c3ad8a}\label{class_b_n_a30_1_1_net_anal_b_n_a17f1b22e9fb4b6006614025ad0c3ad8a}} 
+void {\bfseries set\+Analysis\+Type} (Analysis\+Type e)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a151f3b25b68c816c0ff4e53bd75ad377}\label{class_b_n_a30_1_1_net_anal_b_n_a151f3b25b68c816c0ff4e53bd75ad377}} 
+string {\bfseries Read\+Buffer\+String} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a8cceea2d3ebade0448bcbb42270f2de7}\label{class_b_n_a30_1_1_net_anal_b_n_a8cceea2d3ebade0448bcbb42270f2de7}} 
+double {\bfseries Get\+Millisecs\+Since1970} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_ad77a57eb0168a30835b93867f71a21da}\label{class_b_n_a30_1_1_net_anal_b_n_ad77a57eb0168a30835b93867f71a21da}} 
+byte {\bfseries set\+\_\+bit} (byte inbyte, byte bit\+Position, byte set\+To)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_af10ad8fdeb343d4cb9545e5b335326fb}\label{class_b_n_a30_1_1_net_anal_b_n_af10ad8fdeb343d4cb9545e5b335326fb}} 
+U\+Int16 {\bfseries Modbus\+C\+RC} (byte\mbox{[}$\,$\mbox{]} msg, U\+Int16 len)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a6f270d77a3cfd5800b51ee05a5fc9cff}\label{class_b_n_a30_1_1_net_anal_b_n_a6f270d77a3cfd5800b51ee05a5fc9cff}} 
+int {\bfseries get\+Dt} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a7d08c2f17e43e81ad7c85217c5840118}\label{class_b_n_a30_1_1_net_anal_b_n_a7d08c2f17e43e81ad7c85217c5840118}} 
+void {\bfseries write\+Temp\+File} (string text)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a965eff5bb76aec4b433a6846ab222584}\label{class_b_n_a30_1_1_net_anal_b_n_a965eff5bb76aec4b433a6846ab222584}} 
+U\+Int16 {\bfseries Get\+Message\+Index} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_afc1a2cae0da9512fea8856ac9a39e4aa}\label{class_b_n_a30_1_1_net_anal_b_n_afc1a2cae0da9512fea8856ac9a39e4aa}} 
+U\+Int16 {\bfseries Get\+Message\+Index\+Error} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a9beb0af83e694487d8a86b11a7b3bdf5}\label{class_b_n_a30_1_1_net_anal_b_n_a9beb0af83e694487d8a86b11a7b3bdf5}} 
+void {\bfseries reset\+Packet} (int index, \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}}\mbox{[}$\,$\mbox{]} packet)
+\item 
+int \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_a6e3432d24c574a4b35714894e5600896}{parse\+BN}} (byte inchar)
+\begin{DoxyCompactList}\small\item\em Parse Request and Response BN Packets and store in struct (typ. used for Table.\+Row\mbox{[}\mbox{]}) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_ae1d87164523595df1ccb1eaf9bf85f29}{parse\+Data\+From\+Brick\+Net}} (byte cmd, byte data\+Type, byte\mbox{[}$\,$\mbox{]} data, uint start\+Addr, uint num\+Regs, uint format)
+\begin{DoxyCompactList}\small\item\em Parse Brick\+Net Byte Data Array format = 0 -\/$>$ decimal, or float/double if floating point. = 1 -\/$>$ H\+EX \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_ae51c43374cfe3a7fd258b31ae0602a47}{Update}} (byte inchar)
+\begin{DoxyCompactList}\small\item\em Used to Parse Brick\+Net, create parse string, write data to registers, and generate response packet \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a7593586927532e9c52774c0ac5b3dcc0}\label{class_b_n_a30_1_1_net_anal_b_n_a7593586927532e9c52774c0ac5b3dcc0}} 
+string {\bfseries Get\+Parsed\+Desription} ()
+\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_a34c16bd9ddcea03cdf6f492c95dbd9b1}{Prefix\+Text\+To\+File}} (string text, string full\+File\+Path)
+\item 
+string \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_a8ce0978911afb66e424bb7c5d201ee7e}{parse\+One\+B\+Npacket}} (byte\mbox{[}$\,$\mbox{]} B\+Npacket)
+\begin{DoxyCompactList}\small\item\em Used to Parse One complete Brick\+Net Packet. Returns string containing information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_acbc0bcad46138f72d5cc61bce3dae2ac}{Append\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_n_a30_1_1_net_anal_b_n_a16017636e9d3a76d33def5f22454953c}{Write\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a4ad89c13644164947837b1ea8b125f75}\label{class_b_n_a30_1_1_net_anal_b_n_a4ad89c13644164947837b1ea8b125f75}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}} \mbox{[}$\,$\mbox{]} {\bfseries req\+Resp\+Packet} = new \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}}\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_aef85a26dcfd7b3598fca9aa08902c90f}\label{class_b_n_a30_1_1_net_anal_b_n_aef85a26dcfd7b3598fca9aa08902c90f}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}} {\bfseries B\+Npack} = new \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}}()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a531de0d104d41bfe916466306d4edecf}\label{class_b_n_a30_1_1_net_anal_b_n_a531de0d104d41bfe916466306d4edecf}} 
+string {\bfseries parsed\+Output\+Str} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a483632b7503a03e13d5d8892b735694a}\label{class_b_n_a30_1_1_net_anal_b_n_a483632b7503a03e13d5d8892b735694a}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries B\+Ntest\+Poll} = \{ 0x\+A1,0x\+A2,0x00,0x00,0x01,0x00,0x02,0x00,0x02,0x01,0x00,0x56,0x00,0x08,0x20,0x00,0x01,0x01,0x00,0x01,0x00,0x0\+A,0x\+A4,0x\+F\+C \}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_aa0c3edf471b134685374298bd8f4d25a}\label{class_b_n_a30_1_1_net_anal_b_n_aa0c3edf471b134685374298bd8f4d25a}} 
+bool {\bfseries Rec\+Ready\+To\+Send}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_ac889d4bbe35810d22a5e66d87f636f7b}\label{class_b_n_a30_1_1_net_anal_b_n_ac889d4bbe35810d22a5e66d87f636f7b}} 
+U\+Int16 {\bfseries Mstate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_acbc0bcad46138f72d5cc61bce3dae2ac}\label{class_b_n_a30_1_1_net_anal_b_n_acbc0bcad46138f72d5cc61bce3dae2ac}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!AppendTextToFile@{AppendTextToFile}}
+\index{AppendTextToFile@{AppendTextToFile}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{AppendTextToFile()}{AppendTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+Net\+Anal\+B\+N.\+Append\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a6e3432d24c574a4b35714894e5600896}\label{class_b_n_a30_1_1_net_anal_b_n_a6e3432d24c574a4b35714894e5600896}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!parseBN@{parseBN}}
+\index{parseBN@{parseBN}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{parseBN()}{parseBN()}}
+{\footnotesize\ttfamily int B\+N\+A30.\+Net\+Anal\+B\+N.\+parse\+BN (\begin{DoxyParamCaption}\item[{byte}]{inchar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse Request and Response BN Packets and store in struct (typ. used for Table.\+Row\mbox{[}\mbox{]}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inchar} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state, or error code. C\+RC Pass 1000-\/1999, C\+RC Fail 2000-\/2999, Parsing Error Fail 3000-\/3999 
+\end{DoxyReturn}
+Note\+: 1=bit,2=int8, 3=int16, 4=int32,5=float32, 6=double64, 7=buffer (byte array)\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_ae1d87164523595df1ccb1eaf9bf85f29}\label{class_b_n_a30_1_1_net_anal_b_n_ae1d87164523595df1ccb1eaf9bf85f29}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!parseDataFromBrickNet@{parseDataFromBrickNet}}
+\index{parseDataFromBrickNet@{parseDataFromBrickNet}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{parseDataFromBrickNet()}{parseDataFromBrickNet()}}
+{\footnotesize\ttfamily string B\+N\+A30.\+Net\+Anal\+B\+N.\+parse\+Data\+From\+Brick\+Net (\begin{DoxyParamCaption}\item[{byte}]{cmd,  }\item[{byte}]{data\+Type,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{uint}]{start\+Addr,  }\item[{uint}]{num\+Regs,  }\item[{uint}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parse Brick\+Net Byte Data Array format = 0 -\/$>$ decimal, or float/double if floating point. = 1 -\/$>$ H\+EX 
+
+Note\+: If data\+Type == 1 (bool) and format==1, then show byte array in H\+EX
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Type} & \\
+\hline
+{\em data} & \\
+\hline
+{\em num\+Regs} & \\
+\hline
+{\em format\+: 0=\+Hex, 1=\+Int, 2=float} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a8ce0978911afb66e424bb7c5d201ee7e}\label{class_b_n_a30_1_1_net_anal_b_n_a8ce0978911afb66e424bb7c5d201ee7e}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!parseOneBNpacket@{parseOneBNpacket}}
+\index{parseOneBNpacket@{parseOneBNpacket}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{parseOneBNpacket()}{parseOneBNpacket()}}
+{\footnotesize\ttfamily string B\+N\+A30.\+Net\+Anal\+B\+N.\+parse\+One\+B\+Npacket (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{B\+Npacket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to Parse One complete Brick\+Net Packet. Returns string containing information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inchar} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Parsed Packet
+\end{DoxyReturn}
+Note\+: 1=bit,2=int8, 3=int16, 4=int32,5=float32, 6=double64, 7=buffer (byte array)\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a34c16bd9ddcea03cdf6f492c95dbd9b1}\label{class_b_n_a30_1_1_net_anal_b_n_a34c16bd9ddcea03cdf6f492c95dbd9b1}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!PrefixTextToFile@{PrefixTextToFile}}
+\index{PrefixTextToFile@{PrefixTextToFile}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{PrefixTextToFile()}{PrefixTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+Net\+Anal\+B\+N.\+Prefix\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+Opens a file, prefixes the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to prefix to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_ae51c43374cfe3a7fd258b31ae0602a47}\label{class_b_n_a30_1_1_net_anal_b_n_ae51c43374cfe3a7fd258b31ae0602a47}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!Update@{Update}}
+\index{Update@{Update}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int B\+N\+A30.\+Net\+Anal\+B\+N.\+Update (\begin{DoxyParamCaption}\item[{byte}]{inchar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to Parse Brick\+Net, create parse string, write data to registers, and generate response packet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inchar} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_net_anal_b_n_a16017636e9d3a76d33def5f22454953c}\label{class_b_n_a30_1_1_net_anal_b_n_a16017636e9d3a76d33def5f22454953c}} 
+\index{BNA30.NetAnalBN@{BNA30.NetAnalBN}!WriteTextToFile@{WriteTextToFile}}
+\index{WriteTextToFile@{WriteTextToFile}!BNA30.NetAnalBN@{BNA30.NetAnalBN}}
+\subsubsection{\texorpdfstring{WriteTextToFile()}{WriteTextToFile()}}
+{\footnotesize\ttfamily void B\+N\+A30.\+Net\+Anal\+B\+N.\+Write\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & Full file path for writing text including file name\\
+\hline
+{\em error\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/c\+B\+N\+A\+Nal.\+cs\end{DoxyCompactItemize}

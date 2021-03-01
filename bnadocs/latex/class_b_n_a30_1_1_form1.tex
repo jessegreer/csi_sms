@@ -1,0 +1,166 @@
+\hypertarget{class_b_n_a30_1_1_form1}{}\section{B\+N\+A30.\+Form1 Class Reference}
+\label{class_b_n_a30_1_1_form1}\index{BNA30.Form1@{BNA30.Form1}}
+Inheritance diagram for B\+N\+A30.\+Form1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_n_a30_1_1_form1}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1_byte_array_struct}{Byte\+Array\+Struct}}
+\item 
+class \mbox{\hyperlink{class_b_n_a30_1_1_form1_1_1csv_table_writer}{csv\+Table\+Writer}}
+\begin{DoxyCompactList}\small\item\em Convert Data\+Table to Comma separated\+: \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1_filter_cmds}{Filter\+Cmds}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1long_term_report}{long\+Term\+Report}}
+\item 
+struct \mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1network_stats}{network\+Stats}}
+\item 
+class \mbox{\hyperlink{class_b_n_a30_1_1_form1_1_1_sentenced_model}{Sentenced\+Model}}
+\item 
+class \mbox{\hyperlink{class_b_n_a30_1_1_form1_1_1_words_model}{Words\+Model}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a4a2e9f6579b222809e7149d78736e8b5}\label{class_b_n_a30_1_1_form1_a4a2e9f6579b222809e7149d78736e8b5}} 
+enum {\bfseries Data\+Mode} \{ {\bfseries Text}, 
+{\bfseries Hex}
+ \}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a849ad8ebddd7f8f78f29c9f966218019}\label{class_b_n_a30_1_1_form1_a849ad8ebddd7f8f78f29c9f966218019}} 
+enum {\bfseries Log\+Msg\+Type} \{ \newline
+{\bfseries Incoming}, 
+{\bfseries Outgoing}, 
+{\bfseries Normal}, 
+{\bfseries Warning}, 
+\newline
+{\bfseries Error}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a8c500f118cd3247435e9291ffaa69fe1}\label{class_b_n_a30_1_1_form1_a8c500f118cd3247435e9291ffaa69fe1}} 
+string {\bfseries format\+Time\+Secs} (uint time\+Secs)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_ac9fc6058ae8fbd3f771331f413c7f558}\label{class_b_n_a30_1_1_form1_ac9fc6058ae8fbd3f771331f413c7f558}} 
+object {\bfseries Decompress\+And\+Deserialize$<$ T $>$} (string path)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_ac22c0507f4de267553513ee281e1329d}\label{class_b_n_a30_1_1_form1_ac22c0507f4de267553513ee281e1329d}} 
+string {\bfseries To\+Csv} (\mbox{\hyperlink{class_b_n_a30_1_1_form1_1_1_sentenced_model}{Sentenced\+Model}} data)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_add166799c4e1393285f4b9c1015b1363}\label{class_b_n_a30_1_1_form1_add166799c4e1393285f4b9c1015b1363}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries Serialize\+And\+Compress$<$ T, T\+Stream $>$} (T object\+To\+Write, Func$<$ T\+Stream $>$ create\+Stream, Func$<$ T\+Stream, byte\mbox{[}$\,$\mbox{]}$>$ return\+Method, Action catch\+Action)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a45699bc22ba36c7a139a22ca317f15b1}\label{class_b_n_a30_1_1_form1_a45699bc22ba36c7a139a22ca317f15b1}} 
+static void {\bfseries Serialize\+And\+Compress$<$ T $>$} (T object\+To\+Write, string file\+Path)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a6ea64ad48ac09385699d2072de775959}\label{class_b_n_a30_1_1_form1_a6ea64ad48ac09385699d2072de775959}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries Serialize\+And\+Compress$<$ T $>$} (T collection)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a64f62ca6e25b39d6e01a33d9c9953573}\label{class_b_n_a30_1_1_form1_a64f62ca6e25b39d6e01a33d9c9953573}} 
+static double {\bfseries convert\+To\+Time\+Secs} (string time)
+\item 
+static bool \mbox{\hyperlink{class_b_n_a30_1_1_form1_a8ab552e073dad815b5b7cfb57b62784e}{Append\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_b_n_a30_1_1_form1_ac46dcf3077044b069916fd683d2030d9}{Write\+Text\+To\+File}} (string text, string full\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a8305003bd606771921a38189627e608e}\label{class_b_n_a30_1_1_form1_a8305003bd606771921a38189627e608e}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_packet_statstruct}{B\+Nstorage.\+Packet\+Statstruct}} {\bfseries packet\+Stats} = new \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_packet_statstruct}{B\+Nstorage.\+Packet\+Statstruct}}()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_ad2699e938533aa0e018bc269c9812a54}\label{class_b_n_a30_1_1_form1_ad2699e938533aa0e018bc269c9812a54}} 
+Data\+Table {\bfseries table} = new Data\+Table()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_ad35d8a0026aaa6774ac161f3cd0fe306}\label{class_b_n_a30_1_1_form1_ad35d8a0026aaa6774ac161f3cd0fe306}} 
+string {\bfseries Time\+Stamp\+Formatted}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a2d74744d2973a165d57ae07120c0d2fa}\label{class_b_n_a30_1_1_form1_a2d74744d2973a165d57ae07120c0d2fa}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1network_stats}{network\+Stats}} {\bfseries network\+Load} = new \mbox{\hyperlink{struct_b_n_a30_1_1_form1_1_1network_stats}{network\+Stats}}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_b_n_a30_1_1_form1_a3119d1007891ede1ab3020be53626fe9}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a31230b91763823de9c87596bbac2f555}\label{class_b_n_a30_1_1_form1_a31230b91763823de9c87596bbac2f555}} 
+override Create\+Params {\bfseries Create\+Params}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a8ab552e073dad815b5b7cfb57b62784e}\label{class_b_n_a30_1_1_form1_a8ab552e073dad815b5b7cfb57b62784e}} 
+\index{BNA30.Form1@{BNA30.Form1}!AppendTextToFile@{AppendTextToFile}}
+\index{AppendTextToFile@{AppendTextToFile}!BNA30.Form1@{BNA30.Form1}}
+\subsubsection{\texorpdfstring{AppendTextToFile()}{AppendTextToFile()}}
+{\footnotesize\ttfamily static bool B\+N\+A30.\+Form1.\+Append\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_a3119d1007891ede1ab3020be53626fe9}\label{class_b_n_a30_1_1_form1_a3119d1007891ede1ab3020be53626fe9}} 
+\index{BNA30.Form1@{BNA30.Form1}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!BNA30.Form1@{BNA30.Form1}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void B\+N\+A30.\+Form1.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_b_n_a30_1_1_form1_ac46dcf3077044b069916fd683d2030d9}\label{class_b_n_a30_1_1_form1_ac46dcf3077044b069916fd683d2030d9}} 
+\index{BNA30.Form1@{BNA30.Form1}!WriteTextToFile@{WriteTextToFile}}
+\index{WriteTextToFile@{WriteTextToFile}!BNA30.Form1@{BNA30.Form1}}
+\subsubsection{\texorpdfstring{WriteTextToFile()}{WriteTextToFile()}}
+{\footnotesize\ttfamily static void B\+N\+A30.\+Form1.\+Write\+Text\+To\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten. Creates the full file path if it doesn\textquotesingle{}t exist. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & Full file path for writing text including file name\\
+\hline
+{\em error\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Form1.\+cs\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Form1.\+Designer.\+cs\end{DoxyCompactItemize}

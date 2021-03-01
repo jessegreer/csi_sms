@@ -1,0 +1,118 @@
+\hypertarget{class_b_n_a30_1_1_link_stats}{}\section{B\+N\+A30.\+Link\+Stats Class Reference}
+\label{class_b_n_a30_1_1_link_stats}\index{BNA30.LinkStats@{BNA30.LinkStats}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_aa33185f781bce7ea8ff35e00b918257b}\label{class_b_n_a30_1_1_link_stats_aa33185f781bce7ea8ff35e00b918257b}} 
+{\bfseries Link\+Stats} (string Set\+Log\+File\+Name=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a51be1f0cc0278b378d3a06a97797a604}\label{class_b_n_a30_1_1_link_stats_a51be1f0cc0278b378d3a06a97797a604}} 
+Time\+Span {\bfseries Get\+Time\+Duration} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a06010a1fb8bd17e45ed838d5b151811f}\label{class_b_n_a30_1_1_link_stats_a06010a1fb8bd17e45ed838d5b151811f}} 
+void {\bfseries Set\+Log\+File\+Name} (string Set\+Log\+File\+Name)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a66dd483d693480d0370379905ce63470}\label{class_b_n_a30_1_1_link_stats_a66dd483d693480d0370379905ce63470}} 
+int {\bfseries Get\+Number\+Of\+Records} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a4c404f9dc17ea05211744aa051078184}\label{class_b_n_a30_1_1_link_stats_a4c404f9dc17ea05211744aa051078184}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_link_stats}{B\+Nstorage.\+Link\+Stats}} \mbox{[}$\,$\mbox{]} {\bfseries Get\+All\+Link\+Stats} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_aa809d05394991f3a4960eb2b78e283ad}\label{class_b_n_a30_1_1_link_stats_aa809d05394991f3a4960eb2b78e283ad}} 
+string \mbox{[}$\,$\mbox{]} {\bfseries Get\+All\+Keys\+String\+Array} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a35079815367e5a0e03d1f5a04d93a0fb}\label{class_b_n_a30_1_1_link_stats_a35079815367e5a0e03d1f5a04d93a0fb}} 
+\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_link_stats}{B\+Nstorage.\+Link\+Stats}} {\bfseries Get\+Stat\+Record\+By\+Key} (string key)
+\item 
+bool \mbox{\hyperlink{class_b_n_a30_1_1_link_stats_ada837e00b3cf5168e8f7a145ce08b69d}{Update\+Link}} (\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}} this\+Packet)
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a6599dd85011f2caa9fa256811386408e}\label{class_b_n_a30_1_1_link_stats_a6599dd85011f2caa9fa256811386408e}} 
+void {\bfseries Reset\+Stats} ()
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a2bb2bfd646b575d26079a9c854f0f2ad}\label{class_b_n_a30_1_1_link_stats_a2bb2bfd646b575d26079a9c854f0f2ad}} 
+int {\bfseries get\+Number\+Of\+Links} ()
+\item 
+int \mbox{\hyperlink{class_b_n_a30_1_1_link_stats_a16cc07fd987c78e68497086dab5258fe}{Log\+Results}} (string text, string full\+File\+Path=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em /// Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. If full\+File\+Path is N\+U\+LL, then write to console. /// \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a479822a21fce923eaaa8623666fa12f5}\label{class_b_n_a30_1_1_link_stats_a479822a21fce923eaaa8623666fa12f5}} 
+double {\bfseries convert\+To\+Time\+Secs} (string time)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_ac7c8d12f47b24f4178899e7b0ffe041b}\label{class_b_n_a30_1_1_link_stats_ac7c8d12f47b24f4178899e7b0ffe041b}} 
+static int {\bfseries Cal\+Data\+Length} (byte\mbox{[}$\,$\mbox{]} data)
+\item 
+static \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_link_stats}{B\+Nstorage.\+Link\+Stats}} \mbox{\hyperlink{class_b_n_a30_1_1_link_stats_ada0708851c4f4b61760571f231a058c8}{Create\+Null\+Link\+Stats}} (string link\+Key)
+\begin{DoxyCompactList}\small\item\em Creates a new Link State, i.\+e., initial values, etc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_ab0c5172b6cab44594d4859c0b987157a}\label{class_b_n_a30_1_1_link_stats_ab0c5172b6cab44594d4859c0b987157a}} 
+static \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_link_statstruct}{B\+Nstorage.\+Link\+Statstruct}} {\bfseries Create\+Null\+Link\+Statstruct} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a73347a99b00e43db473b73dc0dd71a96}\label{class_b_n_a30_1_1_link_stats_a73347a99b00e43db473b73dc0dd71a96}} 
+Date\+Time {\bfseries Stat\+Report\+Start\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_ada0708851c4f4b61760571f231a058c8}\label{class_b_n_a30_1_1_link_stats_ada0708851c4f4b61760571f231a058c8}} 
+\index{BNA30.LinkStats@{BNA30.LinkStats}!CreateNullLinkStats@{CreateNullLinkStats}}
+\index{CreateNullLinkStats@{CreateNullLinkStats}!BNA30.LinkStats@{BNA30.LinkStats}}
+\subsubsection{\texorpdfstring{CreateNullLinkStats()}{CreateNullLinkStats()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_link_stats}{B\+Nstorage.\+Link\+Stats}} B\+N\+A30.\+Link\+Stats.\+Create\+Null\+Link\+Stats (\begin{DoxyParamCaption}\item[{string}]{link\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a new Link State, i.\+e., initial values, etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link\+Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_a16cc07fd987c78e68497086dab5258fe}\label{class_b_n_a30_1_1_link_stats_a16cc07fd987c78e68497086dab5258fe}} 
+\index{BNA30.LinkStats@{BNA30.LinkStats}!LogResults@{LogResults}}
+\index{LogResults@{LogResults}!BNA30.LinkStats@{BNA30.LinkStats}}
+\subsubsection{\texorpdfstring{LogResults()}{LogResults()}}
+{\footnotesize\ttfamily int B\+N\+A30.\+Link\+Stats.\+Log\+Results (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{full\+File\+Path = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+/// Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file. Creates the full file path if it doesn\textquotesingle{}t exist. If full\+File\+Path is N\+U\+LL, then write to console. /// 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to append to file\\
+\hline
+{\em full\+File\+Path} & full file path for writing text including file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return error in writing, true = error 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em full\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_a30_1_1_link_stats_ada837e00b3cf5168e8f7a145ce08b69d}\label{class_b_n_a30_1_1_link_stats_ada837e00b3cf5168e8f7a145ce08b69d}} 
+\index{BNA30.LinkStats@{BNA30.LinkStats}!UpdateLink@{UpdateLink}}
+\index{UpdateLink@{UpdateLink}!BNA30.LinkStats@{BNA30.LinkStats}}
+\subsubsection{\texorpdfstring{UpdateLink()}{UpdateLink()}}
+{\footnotesize\ttfamily bool B\+N\+A30.\+Link\+Stats.\+Update\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_b_n_a30_1_1_b_nstorage_1_1_p_a_c_k_e_tstruct}{B\+Nstorage.\+P\+A\+C\+K\+E\+Tstruct}}}]{this\+Packet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Timestamp\+Secs = convert\+To\+Time\+Secs(this\+Packet.\+Time\+Stamp\+Formatted); 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/c\+B\+Nstats.\+cs\end{DoxyCompactItemize}

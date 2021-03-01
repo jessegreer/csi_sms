@@ -1,0 +1,953 @@
+\hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{}\section{C\+S\+I.\+Library.\+Data\+Types.\+Complex Struct Reference}
+\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+
+
+A double-\/precision complex number representation.  
+
+
+Inheritance diagram for C\+S\+I.\+Library.\+Data\+Types.\+Complex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ac933a0bb6a12af69c7408324e93b1014}{Complex}} (double real, double imaginary)
+\begin{DoxyCompactList}\small\item\em Create a complex number from a real and an imaginary component \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a608b9e584979c9471c92e5ec455669a0}{Complex}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} c)
+\begin{DoxyCompactList}\small\item\em Create a complex number based on an existing complex number \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acfabccfac87216495a13aa8bff5f1dd3}{Copy}} ()
+\begin{DoxyCompactList}\small\item\em Returns a separate copy of this complex number \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ca835a74fdfc301ade249375e099138}{Get\+Magnitude}} ()
+\begin{DoxyCompactList}\small\item\em Returns the magnitude (length) of the complex number \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a829d8f3ada314bb10f43c3cc1365bb59}{Get\+Magnitude\+Squared}} ()
+\begin{DoxyCompactList}\small\item\em Returns the magnitude squared (length$^\wedge$2) of the complex number \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1149f7fbc2cecd84de8bdffc4cbf937a}{Get\+Phase\+Radians}} ()
+\begin{DoxyCompactList}\small\item\em Returns the phase (radians) of the complex number \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a4a47bbe93af39f283e01a2f4f2b2a326}{Get\+Conjugate}} ()
+\begin{DoxyCompactList}\small\item\em Returns the conjugate of the complex number (Real, -\/Imaginary) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0ab8db50d75fb2fabc49521526740213}{Normalize}} ()
+\begin{DoxyCompactList}\small\item\em Scale the complex number to 1. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a47a48abff04a9b80fedb13868086c298}{Get\+Hash\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Get the hash code of the complex number \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acdaf8fc1fd25ec76ad19b2f20204cfdb}{Equals}} (object o)
+\begin{DoxyCompactList}\small\item\em Is this complex number equivalent to another object? \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a27d16f899cc6ccb96097992df78e6097}{Compare\+To}} (object o)
+\begin{DoxyCompactList}\small\item\em Compare to other complex numbers or real numbers. If compare was unsuccessful, returns int.\+Min\+Value. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0169362f3e44a3354c4d8feb00c3d9bc}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Get the string representation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3609090c64694f12e1452ecab047f549}{Get\+Real}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the Real part value of the specified complex number. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2abb82ed6e63bcaf14d937d9a8d2abc1}{Get\+Imaginary}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the Imaginary part value of the specified complex number. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a78c4b457ae3aae0ca55c4df4ea2b09f3}{From\+Real}} (Double real)
+\begin{DoxyCompactList}\small\item\em Factory method to take real input and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object using the default imaginary value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a993f2fc3375632789eb3cd6624edd17c}{From\+Imaginary}} (Double imaginary)
+\begin{DoxyCompactList}\small\item\em Factory method to take imaginary input and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object using the default real value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0d9aa503483d772359f287456ab59a5e}{From\+Real\+And\+Imaginary}} (Double real, Double imaginary)
+\begin{DoxyCompactList}\small\item\em Factory method to take real and imaginary inputs and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa39afe9b672a721837776ae09c85188f}{From\+Polar\+Coordinates}} (Double magnitude, Double phase)
+\begin{DoxyCompactList}\small\item\em Factory method to take polar inputs and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a16b834dafff811021ea734ebe877343b}{Get\+Defined\+Instance\+\_\+\+Zero}} ()
+\begin{DoxyCompactList}\small\item\em Returns complex number with real = 0.\+0, imaginary = 0.\+0. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_adfc9b143806ae8ce3e2dacb1c62ab458}{Get\+Defined\+Instance\+\_\+\+One}} ()
+\begin{DoxyCompactList}\small\item\em Returns complex number with real = 1.\+0, imaginary = 0.\+0. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9e878f7f5867e6f513d57537cdf4dd55}{Get\+Defined\+Instance\+\_\+\+Imaginary\+One}} ()
+\begin{DoxyCompactList}\small\item\em Returns complex number with real = 0.\+0, imaginary = 1.\+0. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ae3596863bdda93658c3b4162d6ad0fd6}{Create\+Complex\+Exponential\+Instance}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} z)
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} Exponential Defined as\+: C\+Exp(z) = z.\+Re $\ast$ \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}( Cos(z.\+Im), Sin(z.\+Im) ) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9b5f9e9903acb5696a08df8171b51b6c}{Copy}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns a separate copy of the complex number \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a55d1594b34a93a2f0a1c676085a177f9}{Get\+Magnitude}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the magnitude (length) of the complex number \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aafad62d0a28ec44bc2bd30b63cce89ae}{Get\+Magnitude\+Squared}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the magnitude squared (length$^\wedge$2) of the complex number \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2984f22ff552ffa68f13f2b3d0d89ecc}{Get\+Phase\+Radians}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the phase (radians) of the complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aebdc6dc8b3f0fc043388007288cc361a}{Get\+Conjugate}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex)
+\begin{DoxyCompactList}\small\item\em Returns the conjugate of the complex number (Real, -\/Imaginary) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3fcb1f2dc062c2d039a2905cf322c7c3}{operator==}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Are these two complex numbers equivalent? \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af9069894fc1bd9228163257937953d3f}{operator !=}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Are these two complex numbers different? \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a30b7b337791642a2ac300121ba0bad0f}{operator -\/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a)
+\begin{DoxyCompactList}\small\item\em Negate the complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a902ad0d7e47586efa28f30e40c8268e3}{operator+}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, double f)
+\begin{DoxyCompactList}\small\item\em Add a complex number to a real \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1ba0b0b59df21c096c95b0f5228b5db7}{operator+}} (double f, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a)
+\begin{DoxyCompactList}\small\item\em Add a real to a complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a88fc3ce20a8f379d8301286b4d864bb6}{operator+}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Add to complex numbers \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ac8d7261717050f5169609f0eb920a2}{operator -\/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, double f)
+\begin{DoxyCompactList}\small\item\em Subtract a real from a complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a57f4d8b72c1b10a3cb364352172dfb08}{operator -\/}} (double f, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a)
+\begin{DoxyCompactList}\small\item\em Subtract a complex number from a real \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a64756895a777cb7d1480ad4522d4651a}{operator -\/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Subtract two complex numbers \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a90f5ebb798a031197d2f5b93bc528570}{operator $\ast$}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, double f)
+\begin{DoxyCompactList}\small\item\em Multiply a complex number by a real \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a58f4af6281aab31aa595cb59ba8656eb}{operator $\ast$}} (double f, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a)
+\begin{DoxyCompactList}\small\item\em Multiply a real by a complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a63bafff9c14f0c10a5b6042b3bd4116e}{Multiply\+Scalar}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} complex, double scalar)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} result of multiplying a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} number by a scalar. (Real $\ast$= scalar, Imaginary $\ast$= scalar) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a29914d0aef04f55ee652187554e5d5d0}{operator $\ast$}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Multiply two complex numbers together \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a206652a66232fd3ce1764db50b548989}{operator/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, double f)
+\begin{DoxyCompactList}\small\item\em Divide a complex number by a real number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_abd480458280f02b41fc4baa0bc8a5f53}{operator/}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Divide a complex number by a complex number \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ad9740140a5ccf87ff113f2b6c1ca87dd}{Parse}} (string s)
+\begin{DoxyCompactList}\small\item\em Parse a complex (string) representation in this fashion\+: \char`\"{}( \%f, \%f )\char`\"{} and return \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} result Input string \+: s Output \+: \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} (parsed from s) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af1c851d4fcb54445cb3b50ff9e468029}{Are\+Almost\+Equal}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b, double tolerance)
+\begin{DoxyCompactList}\small\item\em Determine whether two complex numbers are almost (i.\+e. within the tolerance) equivalent. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a935a7f7138240e3e3e270975700449d4}{Get\+Log}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} z)
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} Log(z) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9258fa8f1a0ae37481a3ff5e66e36e87}{Divide\+By\+Real}} (\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} z, double divisor)
+\begin{DoxyCompactList}\small\item\em Divide complex value by real z = \mbox{[}Re/divisor, Im/divisor\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2f3a5dd4b452787fece0a51a10eed13c}{Swap}} (ref \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} a, ref \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} b)
+\begin{DoxyCompactList}\small\item\em Replaces a with b and b with a. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa93303373159836c5e138d274f7c170b}{Real}}
+\begin{DoxyCompactList}\small\item\em The real component of the complex number \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acc416ca539d366befec1407aa6eda524}{Imaginary}}
+\begin{DoxyCompactList}\small\item\em The imaginary component of the complex number \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A double-\/precision complex number representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ac933a0bb6a12af69c7408324e93b1014}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ac933a0bb6a12af69c7408324e93b1014}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Complex@{Complex}}
+\index{Complex@{Complex}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Complex (\begin{DoxyParamCaption}\item[{double}]{real,  }\item[{double}]{imaginary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a complex number from a real and an imaginary component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & \\
+\hline
+{\em imaginary} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a608b9e584979c9471c92e5ec455669a0}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a608b9e584979c9471c92e5ec455669a0}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Complex@{Complex}}
+\index{Complex@{Complex}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Complex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a complex number based on an existing complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af1c851d4fcb54445cb3b50ff9e468029}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af1c851d4fcb54445cb3b50ff9e468029}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!AreAlmostEqual@{AreAlmostEqual}}
+\index{AreAlmostEqual@{AreAlmostEqual}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{AreAlmostEqual()}{AreAlmostEqual()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Are\+Almost\+Equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b,  }\item[{double}]{tolerance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Determine whether two complex numbers are almost (i.\+e. within the tolerance) equivalent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em tolerance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a27d16f899cc6ccb96097992df78e6097}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a27d16f899cc6ccb96097992df78e6097}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Compare\+To (\begin{DoxyParamCaption}\item[{object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare to other complex numbers or real numbers. If compare was unsuccessful, returns int.\+Min\+Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acfabccfac87216495a13aa8bff5f1dd3}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acfabccfac87216495a13aa8bff5f1dd3}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Copy@{Copy}}
+\index{Copy@{Copy}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a separate copy of this complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9b5f9e9903acb5696a08df8171b51b6c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9b5f9e9903acb5696a08df8171b51b6c}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Copy@{Copy}}
+\index{Copy@{Copy}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a separate copy of the complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ae3596863bdda93658c3b4162d6ad0fd6}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ae3596863bdda93658c3b4162d6ad0fd6}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!CreateComplexExponentialInstance@{CreateComplexExponentialInstance}}
+\index{CreateComplexExponentialInstance@{CreateComplexExponentialInstance}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{CreateComplexExponentialInstance()}{CreateComplexExponentialInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Create\+Complex\+Exponential\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} Exponential Defined as\+: C\+Exp(z) = z.\+Re $\ast$ \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}( Cos(z.\+Im), Sin(z.\+Im) ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9258fa8f1a0ae37481a3ff5e66e36e87}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9258fa8f1a0ae37481a3ff5e66e36e87}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!DivideByReal@{DivideByReal}}
+\index{DivideByReal@{DivideByReal}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{DivideByReal()}{DivideByReal()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Divide\+By\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{z,  }\item[{double}]{divisor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Divide complex value by real z = \mbox{[}Re/divisor, Im/divisor\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+{\em divisor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acdaf8fc1fd25ec76ad19b2f20204cfdb}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acdaf8fc1fd25ec76ad19b2f20204cfdb}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Equals@{Equals}}
+\index{Equals@{Equals}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Equals (\begin{DoxyParamCaption}\item[{object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this complex number equivalent to another object? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a993f2fc3375632789eb3cd6624edd17c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a993f2fc3375632789eb3cd6624edd17c}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!FromImaginary@{FromImaginary}}
+\index{FromImaginary@{FromImaginary}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{FromImaginary()}{FromImaginary()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+From\+Imaginary (\begin{DoxyParamCaption}\item[{Double}]{imaginary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Factory method to take imaginary input and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object using the default real value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imaginary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa39afe9b672a721837776ae09c85188f}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa39afe9b672a721837776ae09c85188f}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!FromPolarCoordinates@{FromPolarCoordinates}}
+\index{FromPolarCoordinates@{FromPolarCoordinates}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{FromPolarCoordinates()}{FromPolarCoordinates()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+From\+Polar\+Coordinates (\begin{DoxyParamCaption}\item[{Double}]{magnitude,  }\item[{Double}]{phase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Factory method to take polar inputs and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em magnitude} & \\
+\hline
+{\em phase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a78c4b457ae3aae0ca55c4df4ea2b09f3}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a78c4b457ae3aae0ca55c4df4ea2b09f3}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!FromReal@{FromReal}}
+\index{FromReal@{FromReal}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{FromReal()}{FromReal()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+From\+Real (\begin{DoxyParamCaption}\item[{Double}]{real }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Factory method to take real input and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object using the default imaginary value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0d9aa503483d772359f287456ab59a5e}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0d9aa503483d772359f287456ab59a5e}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!FromRealAndImaginary@{FromRealAndImaginary}}
+\index{FromRealAndImaginary@{FromRealAndImaginary}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{FromRealAndImaginary()}{FromRealAndImaginary()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+From\+Real\+And\+Imaginary (\begin{DoxyParamCaption}\item[{Double}]{real,  }\item[{Double}]{imaginary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Factory method to take real and imaginary inputs and create a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em real} & \\
+\hline
+{\em imaginary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a4a47bbe93af39f283e01a2f4f2b2a326}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a4a47bbe93af39f283e01a2f4f2b2a326}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetConjugate@{GetConjugate}}
+\index{GetConjugate@{GetConjugate}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetConjugate()}{GetConjugate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Conjugate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the conjugate of the complex number (Real, -\/Imaginary) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aebdc6dc8b3f0fc043388007288cc361a}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aebdc6dc8b3f0fc043388007288cc361a}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetConjugate@{GetConjugate}}
+\index{GetConjugate@{GetConjugate}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetConjugate()}{GetConjugate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Conjugate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the conjugate of the complex number (Real, -\/Imaginary) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9e878f7f5867e6f513d57537cdf4dd55}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a9e878f7f5867e6f513d57537cdf4dd55}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetDefinedInstance\_ImaginaryOne@{GetDefinedInstance\_ImaginaryOne}}
+\index{GetDefinedInstance\_ImaginaryOne@{GetDefinedInstance\_ImaginaryOne}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetDefinedInstance\_ImaginaryOne()}{GetDefinedInstance\_ImaginaryOne()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Defined\+Instance\+\_\+\+Imaginary\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns complex number with real = 0.\+0, imaginary = 1.\+0. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_adfc9b143806ae8ce3e2dacb1c62ab458}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_adfc9b143806ae8ce3e2dacb1c62ab458}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetDefinedInstance\_One@{GetDefinedInstance\_One}}
+\index{GetDefinedInstance\_One@{GetDefinedInstance\_One}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetDefinedInstance\_One()}{GetDefinedInstance\_One()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Defined\+Instance\+\_\+\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns complex number with real = 1.\+0, imaginary = 0.\+0. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a16b834dafff811021ea734ebe877343b}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a16b834dafff811021ea734ebe877343b}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetDefinedInstance\_Zero@{GetDefinedInstance\_Zero}}
+\index{GetDefinedInstance\_Zero@{GetDefinedInstance\_Zero}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetDefinedInstance\_Zero()}{GetDefinedInstance\_Zero()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Defined\+Instance\+\_\+\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns complex number with real = 0.\+0, imaginary = 0.\+0. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a47a48abff04a9b80fedb13868086c298}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a47a48abff04a9b80fedb13868086c298}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily override int C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the hash code of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2abb82ed6e63bcaf14d937d9a8d2abc1}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2abb82ed6e63bcaf14d937d9a8d2abc1}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetImaginary@{GetImaginary}}
+\index{GetImaginary@{GetImaginary}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetImaginary()}{GetImaginary()}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Imaginary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the Imaginary part value of the specified complex number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a935a7f7138240e3e3e270975700449d4}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a935a7f7138240e3e3e270975700449d4}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetLog@{GetLog}}
+\index{GetLog@{GetLog}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetLog()}{GetLog()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} Log(z) 
+
+Defined as\+: C\+Log(z) = \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}\mbox{[} 0.\+5$\ast$\+Math.Log(z.\+Re$\ast$z.Re + z.\+Im$\ast$z.Im) , atan(z.\+Im/z.Re) \mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ca835a74fdfc301ade249375e099138}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ca835a74fdfc301ade249375e099138}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetMagnitude@{GetMagnitude}}
+\index{GetMagnitude@{GetMagnitude}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetMagnitude()}{GetMagnitude()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the magnitude (length) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a55d1594b34a93a2f0a1c676085a177f9}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a55d1594b34a93a2f0a1c676085a177f9}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetMagnitude@{GetMagnitude}}
+\index{GetMagnitude@{GetMagnitude}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetMagnitude()}{GetMagnitude()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Magnitude (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the magnitude (length) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a829d8f3ada314bb10f43c3cc1365bb59}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a829d8f3ada314bb10f43c3cc1365bb59}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetMagnitudeSquared@{GetMagnitudeSquared}}
+\index{GetMagnitudeSquared@{GetMagnitudeSquared}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetMagnitudeSquared()}{GetMagnitudeSquared()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Magnitude\+Squared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the magnitude squared (length$^\wedge$2) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aafad62d0a28ec44bc2bd30b63cce89ae}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aafad62d0a28ec44bc2bd30b63cce89ae}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetMagnitudeSquared@{GetMagnitudeSquared}}
+\index{GetMagnitudeSquared@{GetMagnitudeSquared}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetMagnitudeSquared()}{GetMagnitudeSquared()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Magnitude\+Squared (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the magnitude squared (length$^\wedge$2) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1149f7fbc2cecd84de8bdffc4cbf937a}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1149f7fbc2cecd84de8bdffc4cbf937a}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetPhaseRadians@{GetPhaseRadians}}
+\index{GetPhaseRadians@{GetPhaseRadians}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetPhaseRadians()}{GetPhaseRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Phase\+Radians (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the phase (radians) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2984f22ff552ffa68f13f2b3d0d89ecc}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2984f22ff552ffa68f13f2b3d0d89ecc}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetPhaseRadians@{GetPhaseRadians}}
+\index{GetPhaseRadians@{GetPhaseRadians}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetPhaseRadians()}{GetPhaseRadians()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Phase\+Radians (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the phase (radians) of the complex number 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3609090c64694f12e1452ecab047f549}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3609090c64694f12e1452ecab047f549}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!GetReal@{GetReal}}
+\index{GetReal@{GetReal}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{GetReal()}{GetReal()}}
+{\footnotesize\ttfamily static double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Get\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the Real part value of the specified complex number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em complex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a63bafff9c14f0c10a5b6042b3bd4116e}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a63bafff9c14f0c10a5b6042b3bd4116e}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!MultiplyScalar@{MultiplyScalar}}
+\index{MultiplyScalar@{MultiplyScalar}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{MultiplyScalar()}{MultiplyScalar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Multiply\+Scalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{complex,  }\item[{double}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} result of multiplying a \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} number by a scalar. (Real $\ast$= scalar, Imaginary $\ast$= scalar) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em complex} & \\
+\hline
+{\em scalar} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0ab8db50d75fb2fabc49521526740213}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0ab8db50d75fb2fabc49521526740213}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily void C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Scale the complex number to 1. 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af9069894fc1bd9228163257937953d3f}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_af9069894fc1bd9228163257937953d3f}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator "!=@{operator "!=}}
+\index{operator "!=@{operator "!=}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator "!=()}{operator !=()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator != (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Are these two complex numbers different? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a90f5ebb798a031197d2f5b93bc528570}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a90f5ebb798a031197d2f5b93bc528570}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{double}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Multiply a complex number by a real 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a58f4af6281aab31aa595cb59ba8656eb}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a58f4af6281aab31aa595cb59ba8656eb}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{double}]{f,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Multiply a real by a complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a29914d0aef04f55ee652187554e5d5d0}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a29914d0aef04f55ee652187554e5d5d0}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Multiply two complex numbers together 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a30b7b337791642a2ac300121ba0bad0f}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a30b7b337791642a2ac300121ba0bad0f}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Negate the complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ac8d7261717050f5169609f0eb920a2}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3ac8d7261717050f5169609f0eb920a2}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{double}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Subtract a real from a complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a57f4d8b72c1b10a3cb364352172dfb08}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a57f4d8b72c1b10a3cb364352172dfb08}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator -\/ (\begin{DoxyParamCaption}\item[{double}]{f,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Subtract a complex number from a real 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a64756895a777cb7d1480ad4522d4651a}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a64756895a777cb7d1480ad4522d4651a}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Subtract two complex numbers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a902ad0d7e47586efa28f30e40c8268e3}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a902ad0d7e47586efa28f30e40c8268e3}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator+@{operator+}}
+\index{operator+@{operator+}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{double}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add a complex number to a real 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1ba0b0b59df21c096c95b0f5228b5db7}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a1ba0b0b59df21c096c95b0f5228b5db7}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator+@{operator+}}
+\index{operator+@{operator+}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator+ (\begin{DoxyParamCaption}\item[{double}]{f,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add a real to a complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a88fc3ce20a8f379d8301286b4d864bb6}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a88fc3ce20a8f379d8301286b4d864bb6}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator+@{operator+}}
+\index{operator+@{operator+}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add to complex numbers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a206652a66232fd3ce1764db50b548989}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a206652a66232fd3ce1764db50b548989}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator/@{operator/}}
+\index{operator/@{operator/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{double}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Divide a complex number by a real number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_abd480458280f02b41fc4baa0bc8a5f53}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_abd480458280f02b41fc4baa0bc8a5f53}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator/@{operator/}}
+\index{operator/@{operator/}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Divide a complex number by a complex number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3fcb1f2dc062c2d039a2905cf322c7c3}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a3fcb1f2dc062c2d039a2905cf322c7c3}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!operator==@{operator==}}
+\index{operator==@{operator==}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{\mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Are these two complex numbers equivalent? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ad9740140a5ccf87ff113f2b6c1ca87dd}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_ad9740140a5ccf87ff113f2b6c1ca87dd}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Parse@{Parse}}
+\index{Parse@{Parse}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Parse (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Parse a complex (string) representation in this fashion\+: \char`\"{}( \%f, \%f )\char`\"{} and return \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} result Input string \+: s Output \+: \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}} (parsed from s) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2f3a5dd4b452787fece0a51a10eed13c}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a2f3a5dd4b452787fece0a51a10eed13c}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Swap@{Swap}}
+\index{Swap@{Swap}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily static void C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Swap (\begin{DoxyParamCaption}\item[{ref \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{a,  }\item[{ref \mbox{\hyperlink{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex}{Complex}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Replaces a with b and b with a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0169362f3e44a3354c4d8feb00c3d9bc}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_a0169362f3e44a3354c4d8feb00c3d9bc}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!ToString@{ToString}}
+\index{ToString@{ToString}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the string representation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acc416ca539d366befec1407aa6eda524}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_acc416ca539d366befec1407aa6eda524}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Imaginary@{Imaginary}}
+\index{Imaginary@{Imaginary}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Imaginary}{Imaginary}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Imaginary}
+
+
+
+The imaginary component of the complex number 
+
+\mbox{\Hypertarget{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa93303373159836c5e138d274f7c170b}\label{struct_c_s_i_1_1_library_1_1_data_types_1_1_complex_aa93303373159836c5e138d274f7c170b}} 
+\index{CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}!Real@{Real}}
+\index{Real@{Real}!CSI.Library.DataTypes.Complex@{CSI.Library.DataTypes.Complex}}
+\subsubsection{\texorpdfstring{Real}{Real}}
+{\footnotesize\ttfamily double C\+S\+I.\+Library.\+Data\+Types.\+Complex.\+Real}
+
+
+
+The real component of the complex number 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/svn\+Projects/trunk/\+B\+N\+A30/\+B\+N\+A30/Complex.\+cs\end{DoxyCompactItemize}
